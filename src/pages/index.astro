@@ -88,9 +88,18 @@ import Default from "../layouts/Default.astro";
         <div class="section-head">
           <h2>O nas</h2>
         </div>
-        <p class="onas-text">
-          Zajmujemy się hydrauliką w Warszawie. Drobne naprawy, awarie i większe prace instalacyjne przy remontach – to nasza codzienność. Do każdego zlecenia przyjeżdżamy z kompletem narzędzi i najczęściej zamykamy pracę podczas jednej wizyty. Cenę podajemy przed rozpoczęciem pracy, po obejrzeniu usterki. Bez niespodzianek przy rozliczeniu.
-        </p>
+        <div class="onas-grid">
+          <p class="onas-text">
+            Zajmujemy się hydrauliką w Warszawie. Drobne naprawy, awarie i większe prace instalacyjne przy remontach – to nasza codzienność. Do każdego zlecenia przyjeżdżamy z kompletem narzędzi i najczęściej zamykamy pracę podczas jednej wizyty. Cenę podajemy przed rozpoczęciem pracy, po obejrzeniu usterki. Bez niespodzianek przy rozliczeniu.
+          </p>
+          <img
+            src="/img/index/hydraulik-warszawa.webp"
+            alt="Hydraulik z Warszawy w łazience przy umywalce – uśmiechnięty fachowiec w granatowej koszulce"
+            width="546"
+            height="396"
+            loading="lazy"
+          />
+        </div>
       </section>
 
       <section id="obszar-dzialania">
@@ -427,8 +436,30 @@ import Default from "../layouts/Default.astro";
     font-weight: 700;
   }
 
+  .onas-grid {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 30px;
+    align-items: start;
+  }
+
+  .onas-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+
   .onas-text {
     max-width: 860px;
+  }
+
+  @media (max-width: 900px) {
+    .onas-grid {
+      grid-template-columns: 1fr;
+    }
+    .onas-grid img {
+      max-width: 460px;
+    }
   }
 
   .pricing-list {
