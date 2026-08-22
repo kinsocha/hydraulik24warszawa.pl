@@ -50,32 +50,38 @@ import Default from "../layouts/Default.astro";
           <h2>Usługi hydrauliczne</h2>
           <p>Naprawy, montaż i instalacje wodne w mieszkaniach, domach i lokalach usługowych.</p>
         </div>
-        <div class="services-grid">
-          <article class="service-box">
-            <h3>Usuwanie awarii wodnych</h3>
-            <p>Pęknięty wężyk, cieknący zawór, woda pod szafką. Zakręcamy, wymieniamy uszkodzony element i sprawdzamy szczelność.</p>
-          </article>
-          <article class="service-box">
-            <h3>Montaż i wymiana baterii</h3>
-            <p>Baterie kuchenne, umywalkowe, wannowe i prysznicowe. Montujemy zarówno sprzęt kupiony przez klienta, jak i dostarczony przez nas.</p>
-          </article>
-          <article class="service-box">
-            <h3>Naprawa spłuczek WC</h3>
-            <p>Spłuczki kompaktowe i podtynkowe. Wymiana zaworu napełniającego, mechanizmu spustowego i uszczelek.</p>
-          </article>
-          <article class="service-box">
-            <h3>Wymiana syfonów i podejść</h3>
-            <p>Cieknący syfon pod zlewem albo umywalką to częsta usterka. Wymieniamy syfony i dopasowujemy podejścia do nowego sprzętu.</p>
-          </article>
-          <article class="service-box">
-            <h3>Podłączanie pralek i zmywarek</h3>
-            <p>Doprowadzenie wody, podpięcie odpływu i próba szczelności. Sprzęt zostaje gotowy do pierwszego uruchomienia.</p>
-          </article>
-          <article class="service-box">
-            <h3>Instalacje wodne przy remontach</h3>
-            <p>Nowe podejścia wody, przeniesienie punktów poboru, rury prowadzone w bruzdach. Pracujemy na rurach zgrzewanych PP-R.</p>
-          </article>
-        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej</li>
+          <li>wymiana baterii umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>naprawa spłuczki podtynkowej</li>
+          <li>wymiana zaworu napełniającego i mechanizmu spustowego</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>podłączenie pralki</li>
+          <li>podłączenie zmywarki</li>
+          <li>montaż umywalki</li>
+          <li>montaż zlewozmywaka</li>
+          <li>montaż brodzika i kabiny prysznicowej</li>
+          <li>montaż i wymiana wanny</li>
+          <li>silikonowanie wanny, brodzika i umywalki</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>wymiana wodomierzy</li>
+          <li>nowe instalacje wodno-kanalizacyjne w mieszkaniach</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>przenoszenie punktów poboru wody</li>
+          <li>prowadzenie rur zgrzewanych PP-R w bruzdach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
       </section>
 
       <section id="o-nas">
@@ -366,22 +372,24 @@ import Default from "../layouts/Default.astro";
     gap: 12px;
   }
 
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  .services-list {
+    list-style: none;
+    columns: 3;
+    column-gap: 40px;
   }
 
-  .service-box {
-    background: #fafaf8;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 22px 24px;
+  .services-list li {
+    padding: 6px 0 6px 28px;
+    position: relative;
+    break-inside: avoid;
   }
 
-  .service-box h3 {
-    font-size: 19px;
-    margin-bottom: 8px;
+  .services-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 700;
   }
 
   .onas-text {
@@ -468,9 +476,11 @@ import Default from "../layouts/Default.astro";
   }
 
   @media (max-width: 900px) {
-    .services-grid,
     .reviews-grid {
       grid-template-columns: 1fr 1fr;
+    }
+    .services-list {
+      columns: 2;
     }
   }
 
@@ -490,9 +500,11 @@ import Default from "../layouts/Default.astro";
   }
 
   @media (max-width: 640px) {
-    .services-grid,
     .reviews-grid {
       grid-template-columns: 1fr;
+    }
+    .services-list {
+      columns: 1;
     }
     .cta-box {
       padding: 26px 22px;
