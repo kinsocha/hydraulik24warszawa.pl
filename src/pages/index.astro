@@ -13,11 +13,7 @@ import Default from "../layouts/Default.astro";
           <div class="media-panel">
             <span class="media-panel__badge">24h</span>
             <p class="media-panel__title">Pogotowie hydrauliczne</p>
-            <ul class="media-panel__points">
-              <li>Awarie wodne</li>
-              <li>Montaż i naprawy</li>
-              <li>Cała Warszawa</li>
-            </ul>
+            <a class="btn btn--primary media-panel__call" href="tel:">Zadzwoń</a>
           </div>
           <div class="biz-card__ribbon">Pomoc przy awariach przez całą dobę</div>
           <div class="biz-card__rating">
@@ -271,25 +267,9 @@ import Default from "../layouts/Default.astro";
     line-height: 1.2;
   }
 
-  .media-panel__points {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 18px;
-  }
-
-  .media-panel__points li {
-    padding-left: 26px;
-    position: relative;
-  }
-
-  .media-panel__points li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: var(--orange);
-    font-weight: 700;
+  .media-panel__call {
+    font-size: 20px;
+    padding: 15px 46px;
   }
 
   .biz-card__ribbon {
