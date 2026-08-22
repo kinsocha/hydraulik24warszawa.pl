@@ -19,7 +19,7 @@ import Default from "../layouts/Default.astro";
               <li>Cała Warszawa</li>
             </ul>
           </div>
-          <div class="biz-card__ribbon"><a href="tel:123456789">Zadzwoń 123456789</a></div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
         </div>
 
         <div class="biz-card__body">
@@ -298,6 +298,10 @@ import Default from "../layouts/Default.astro";
   .biz-card__ribbon a {
     color: #fff;
     text-decoration: none;
+  }
+
+  .biz-card__ribbon-label {
+    margin-right: 26px;
   }
 
   .biz-card__body {
