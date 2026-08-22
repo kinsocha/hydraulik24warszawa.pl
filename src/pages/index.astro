@@ -107,23 +107,11 @@ import Default from "../layouts/Default.astro";
           <h2>Cennik</h2>
           <p>Kwoty orientacyjne. Dokładna wycena przez telefon – bezpłatnie i bez zobowiązań, a ostateczna cena zawsze pada przed rozpoczęciem pracy.</p>
         </div>
-        <div class="pricing-grid">
-          <article class="price-card">
-            <h3>Montaż baterii</h3>
-            <p>Bateria umywalkowa, kuchenna albo wannowa. Demontaż starej, montaż nowej i próba szczelności na miejscu.</p>
-            <div class="price-card__val">od 350 zł</div>
-          </article>
-          <article class="price-card">
-            <h3>Nagła awaria</h3>
-            <p>Pęknięty wężyk, cieknący zawór, woda kapiąca pod szafką. Przyjazd, znalezienie przyczyny i naprawa.</p>
-            <div class="price-card__val">do uzgodnienia</div>
-          </article>
-          <article class="price-card">
-            <h3>Naprawa spłuczki</h3>
-            <p>Cieknąca spłuczka, słaby spływ, uszkodzony mechanizm albo zawór. Diagnoza i wymiana części podczas jednej wizyty.</p>
-            <div class="price-card__val">od 350 zł</div>
-          </article>
-        </div>
+        <ul class="pricing-list">
+          <li><span>montaż baterii</span><span class="pricing-list__price">od 350 zł</span></li>
+          <li><span>nagła awaria</span><span class="pricing-list__price">do uzgodnienia</span></li>
+          <li><span>naprawa spłuczki</span><span class="pricing-list__price">od 350 zł</span></li>
+        </ul>
         <p class="pricing-note">Podane ceny dotyczą usług w dni robocze w standardowych godzinach. W soboty, niedziele, święta oraz po 20:00 stawki mogą być wyższe – dokładna kwota zawsze ustalana telefonicznie.</p>
       </section>
 
@@ -434,35 +422,40 @@ import Default from "../layouts/Default.astro";
     max-width: 860px;
   }
 
-  .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  .pricing-list {
+    list-style: none;
+    max-width: 560px;
   }
 
-  .price-card {
-    background: #fafaf8;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 22px 24px;
+  .pricing-list li {
     display: flex;
-    flex-direction: column;
+    align-items: baseline;
+    gap: 12px;
+    padding: 6px 0 6px 28px;
+    position: relative;
   }
 
-  .price-card h3 {
-    font-size: 19px;
-    margin-bottom: 8px;
-  }
-
-  .price-card p {
-    flex: 1;
-    margin-bottom: 14px;
-  }
-
-  .price-card__val {
-    color: var(--orange-hover);
-    font-size: 24px;
+  .pricing-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: var(--green);
     font-weight: 700;
+  }
+
+  .pricing-list li > span:first-child::after {
+    content: "";
+  }
+
+  .pricing-list li > span:first-of-type {
+    flex: 1;
+    border-bottom: 1px dotted #c9ccd1;
+  }
+
+  .pricing-list__price {
+    font-weight: 700;
+    color: var(--orange-hover);
+    white-space: nowrap;
   }
 
   .pricing-note {
@@ -551,8 +544,7 @@ import Default from "../layouts/Default.astro";
   }
 
   @media (max-width: 900px) {
-    .reviews-grid,
-    .pricing-grid {
+    .reviews-grid {
       grid-template-columns: 1fr 1fr;
     }
     .services-list {
@@ -576,8 +568,7 @@ import Default from "../layouts/Default.astro";
   }
 
   @media (max-width: 640px) {
-    .reviews-grid,
-    .pricing-grid {
+    .reviews-grid {
       grid-template-columns: 1fr;
     }
     .services-list {
