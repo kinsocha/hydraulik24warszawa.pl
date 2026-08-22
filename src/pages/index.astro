@@ -1,17 +1,494 @@
 ---
-
+import Default from "../layouts/Default.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Default
+  title="Hydraulik Warszawa 24h – awarie wodne, montaż i naprawy"
+  description="Hydraulik w Warszawie dostępny całą dobę. Usuwanie awarii wodnych, montaż baterii, naprawa spłuczek, podłączanie sprzętów AGD i instalacje wodne przy remontach. Cena podawana przed rozpoczęciem pracy."
+>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="biz-card">
+          <div class="biz-card__media">
+            <span class="biz-card__badge">24h</span>
+            <img
+              src="/img/index/nowe-rury-wody-w-bruzdach-hydraulik-warszawa.webp"
+              alt="Nowe rury wody poprowadzone w bruzdach ściany z zaworami odcinającymi – praca hydraulika w Warszawie"
+              width="900"
+              height="506"
+              loading="eager"
+            />
+            <div class="biz-card__ribbon">Pomoc przy awariach przez całą dobę</div>
+            <div class="biz-card__rating">
+              <span class="biz-card__stars" aria-hidden="true">★★★★★</span>
+              <span class="biz-card__score">5,00</span>
+              <span class="biz-card__rating-note">ocena od naszych klientów</span>
+            </div>
+          </div>
+
+          <div class="biz-card__body">
+            <p class="biz-card__cats">
+              <strong>Usługi hydrauliczne</strong>
+              <span>•</span> Instalacje wodne
+              <span>•</span> Montaż i naprawy
+            </p>
+            <h1>Hydraulik 24 Warszawa</h1>
+            <p class="biz-card__addr">Warszawa i okolice</p>
+
+            <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+            <ul class="biz-card__pros">
+              <li>Fachowe podejście do każdej naprawy</li>
+              <li>Dotrzymywanie umówionych terminów</li>
+              <li>Jasna wycena przed rozpoczęciem pracy</li>
+            </ul>
+
+            <div class="biz-card__actions">
+              <a class="btn btn--primary" href="#wycena">Uzyskaj wycenę</a>
+              <a class="btn btn--ghost" href="#uslugi">Zobacz szczegóły</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="uslugi">
+      <div class="container">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne</h2>
+          <p>Naprawy, montaż i instalacje wodne w mieszkaniach, domach i lokalach usługowych.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-box">
+            <h3>Usuwanie awarii wodnych</h3>
+            <p>Pęknięty wężyk, cieknący zawór, woda pod szafką. Zakręcamy, wymieniamy uszkodzony element i sprawdzamy szczelność.</p>
+          </article>
+          <article class="service-box">
+            <h3>Montaż i wymiana baterii</h3>
+            <p>Baterie kuchenne, umywalkowe, wannowe i prysznicowe. Montujemy zarówno sprzęt kupiony przez klienta, jak i dostarczony przez nas.</p>
+          </article>
+          <article class="service-box">
+            <h3>Naprawa spłuczek WC</h3>
+            <p>Spłuczki kompaktowe i podtynkowe. Wymiana zaworu napełniającego, mechanizmu spustowego i uszczelek.</p>
+          </article>
+          <article class="service-box">
+            <h3>Wymiana syfonów i podejść</h3>
+            <p>Cieknący syfon pod zlewem albo umywalką to częsta usterka. Wymieniamy syfony i dopasowujemy podejścia do nowego sprzętu.</p>
+          </article>
+          <article class="service-box">
+            <h3>Podłączanie pralek i zmywarek</h3>
+            <p>Doprowadzenie wody, podpięcie odpływu i próba szczelności. Sprzęt zostaje gotowy do pierwszego uruchomienia.</p>
+          </article>
+          <article class="service-box">
+            <h3>Instalacje wodne przy remontach</h3>
+            <p>Nowe podejścia wody, przeniesienie punktów poboru, rury prowadzone w bruzdach. Pracujemy na rurach zgrzewanych PP-R.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-nas">
+      <div class="container">
+        <div class="section-head">
+          <h2>O nas</h2>
+        </div>
+        <p class="onas-text">
+          Zajmujemy się hydrauliką w Warszawie. Drobne naprawy, awarie i większe prace instalacyjne przy remontach – to nasza codzienność. Do każdego zlecenia przyjeżdżamy z kompletem narzędzi i najczęściej zamykamy pracę podczas jednej wizyty. Cenę podajemy przed rozpoczęciem pracy, po obejrzeniu usterki. Bez niespodzianek przy rozliczeniu.
+        </p>
+      </div>
+    </section>
+
+    <section id="recenzje">
+      <div class="container">
+        <div class="section-head">
+          <h2>Recenzje klientów</h2>
+        </div>
+        <div class="reviews-grid">
+          <article class="review">
+            <div class="review__stars" aria-hidden="true">★★★★★</div>
+            <p class="review__text">
+              Wymiana baterii umywalkowej i wężyków. Sprawnie i czysto. Polecam.
+            </p>
+            <p class="review__author">Pani Agnieszka Sadowska</p>
+            <p class="review__date">19.08.2026</p>
+          </article>
+          <article class="review">
+            <div class="review__stars" aria-hidden="true">★★★★★</div>
+            <p class="review__text">
+              Spłuczka zaczęła przepuszczać wodę do muszli i rachunki poszły w górę. Pan hydraulik przyjechał wieczorem, wymienił zawór napełniający i mechanizm spustowy. Cena podana z góry, zgodna z tym, co zapłaciłem. Widać doświadczenie. Polecam każdemu.
+            </p>
+            <p class="review__author">Pan Tomasz Zawadzki</p>
+            <p class="review__date">16.08.2026</p>
+          </article>
+          <article class="review">
+            <div class="review__stars" aria-hidden="true">★★★★★</div>
+            <p class="review__text">
+              Podłączenie zmywarki w zabudowie plus nowy syfon ze wszystkimi podejściami. Umówiona godzina dotrzymana co do minuty, po pracy wszystko sprawdzone pod kątem szczelności.
+            </p>
+            <p class="review__author">Pan Krzysztof Maliszewski</p>
+            <p class="review__date">14.08.2026</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="application/ld+json"
+      is:inline
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "Jak szybko hydraulik może przyjechać do awarii?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Pracujemy całą dobę, także w weekendy i święta. Przy awariach z uciekającą wodą staramy się przyjechać jak najszybciej – dokładny termin ustalamy przy zgłoszeniu.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Czy podajecie cenę przed rozpoczęciem pracy?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Tak. Hydraulik ogląda usterkę na miejscu i podaje cenę przed rozpoczęciem pracy. Kwota ustalona na starcie nie zmienia się przy rozliczeniu.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Jakie naprawy wykonujecie w mieszkaniach?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Najczęściej: wymiana baterii, naprawa spłuczki, wymiana syfonu, wymiana zaworów i wężyków, podłączenie pralki lub zmywarki oraz drobne przeróbki instalacji wodnej.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Czy montujecie baterie i sprzęty kupione przez klienta?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Tak, montujemy sprzęt kupiony przez klienta. Możemy też doradzić przed zakupem, co sprawdzi się w danym miejscu, albo przyjechać z własnym materiałem.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Czy wykonujecie instalacje wodne przy remontach?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Tak. Prowadzimy nowe podejścia wody, przenosimy punkty poboru i układamy rury w bruzdach. Pracujemy na rurach zgrzewanych PP-R, a przed zakryciem ścian wykonujemy próbę szczelności.",
+            },
+          },
+        ],
+      })}
+    />
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>Często zadawane pytania</h2>
+        </div>
+        <details>
+          <summary>Jak szybko hydraulik może przyjechać do awarii?</summary>
+          <p>Pracujemy całą dobę, także w weekendy i święta. Przy awariach z uciekającą wodą staramy się przyjechać jak najszybciej – dokładny termin ustalamy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Czy podajecie cenę przed rozpoczęciem pracy?</summary>
+          <p>Tak. Hydraulik ogląda usterkę na miejscu i podaje cenę przed rozpoczęciem pracy. Kwota ustalona na starcie nie zmienia się przy rozliczeniu.</p>
+        </details>
+        <details>
+          <summary>Jakie naprawy wykonujecie w mieszkaniach?</summary>
+          <p>Najczęściej: wymiana baterii, naprawa spłuczki, wymiana syfonu, wymiana zaworów i wężyków, podłączenie pralki lub zmywarki oraz drobne przeróbki instalacji wodnej.</p>
+        </details>
+        <details>
+          <summary>Czy montujecie baterie i sprzęty kupione przez klienta?</summary>
+          <p>Tak, montujemy sprzęt kupiony przez klienta. Możemy też doradzić przed zakupem, co sprawdzi się w danym miejscu, albo przyjechać z własnym materiałem.</p>
+        </details>
+        <details>
+          <summary>Czy wykonujecie instalacje wodne przy remontach?</summary>
+          <p>Tak. Prowadzimy nowe podejścia wody, przenosimy punkty poboru i układamy rury w bruzdach. Pracujemy na rurach zgrzewanych PP-R, a przed zakryciem ścian wykonujemy próbę szczelności.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="wycena" class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Wycena przed rozpoczęciem pracy</h2>
+          <p>
+            Opisz usterkę, a powiemy, ile będzie kosztowała naprawa. Ostateczną cenę hydraulik potwierdza na miejscu, po obejrzeniu instalacji – zawsze zanim weźmie się do pracy.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Default>
+
+<style>
+  .hero {
+    padding-top: 34px;
+  }
+
+  .biz-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    background: var(--card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .biz-card__media {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .biz-card__media img {
+    width: 100%;
+    height: 100%;
+    min-height: 230px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .biz-card__badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--orange);
+    color: #fff;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .biz-card__ribbon {
+    background: var(--orange);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 8px 14px;
+  }
+
+  .biz-card__rating {
+    background: var(--dark-box);
+    color: #fff;
+    padding: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4px 10px;
+    text-align: center;
+  }
+
+  .biz-card__stars {
+    color: var(--star);
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .biz-card__score {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .biz-card__rating-note {
+    flex-basis: 100%;
+    font-size: 14px;
+    color: #cfcfcb;
+  }
+
+  .biz-card__body {
+    padding: 30px 34px;
+  }
+
+  .biz-card__cats {
+    color: var(--muted);
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .biz-card__cats strong {
+    color: var(--orange-hover);
+  }
+
+  .biz-card__cats span {
+    margin: 0 6px;
+    color: var(--orange);
+  }
+
+  .biz-card__body h1 {
+    font-size: 34px;
+    margin-bottom: 4px;
+  }
+
+  .biz-card__addr {
+    color: var(--muted);
+    margin-bottom: 22px;
+  }
+
+  .biz-card__sub {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .biz-card__pros {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 26px;
+  }
+
+  .biz-card__pros li {
+    padding-left: 30px;
+    position: relative;
+  }
+
+  .biz-card__pros li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  .biz-card__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .service-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+  }
+
+  .service-box h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+
+  .onas-text {
+    max-width: 820px;
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .review {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review__stars {
+    color: var(--star);
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+
+  .review__text {
+    flex: 1;
+    margin-bottom: 14px;
+  }
+
+  .review__author {
+    font-weight: 700;
+    color: var(--navy);
+  }
+
+  .review__date {
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  #faq details {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+  }
+
+  #faq summary {
+    font-weight: 700;
+    color: var(--navy);
+    cursor: pointer;
+  }
+
+  #faq details p {
+    margin-top: 10px;
+  }
+
+  .cta-section {
+    padding-bottom: 20px;
+  }
+
+  .cta-box {
+    background: var(--navy);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 36px 40px;
+  }
+
+  .cta-box h2 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .cta-box p {
+    max-width: 760px;
+    color: #dbe3ee;
+  }
+
+  @media (max-width: 900px) {
+    .services-grid,
+    .reviews-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .biz-card {
+      grid-template-columns: 1fr;
+    }
+    .biz-card__body {
+      padding: 24px 20px;
+    }
+    .biz-card__body h1 {
+      font-size: 27px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .services-grid,
+    .reviews-grid {
+      grid-template-columns: 1fr;
+    }
+    .cta-box {
+      padding: 26px 22px;
+    }
+  }
+</style>
