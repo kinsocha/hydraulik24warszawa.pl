@@ -19,6 +19,17 @@
 - **/udraznianie-rur-warszawa/ (udrażnianie)**: w treści NIE używać słów „hydraulik / hydraulika /
   usługi hydrauliczne". Wyjątek: nazwa marki „Hydraulik 24 Warszawa" w navbarze i stopce.
 
+## Podstrony dzielnicowe — reguły (decyzja właściciela 23.08.2026)
+
+- **Slugi ORYGINALNE ze starej domeny** (z Wayback), czyli ZE słowem „warszawa", np.
+  `/hydraulik-warszawa-targowek/`, `/hydraulik-warszawa-mokotow/`, `/hydraulik-piaseczno/`,
+  `/hydraulik-pruszkow/` (Piaseczno i Pruszków były bez „warszawa" w slugu).
+- **ALE w `<title>` i H1 podstrony NIE dawać słowa „Warszawa"** — np. title/H1 „Hydraulik Targówek",
+  mimo że slug to `/hydraulik-warszawa-targowek/`. Reguła dotyczy TEGO projektu (hydraulik24warszawa.pl),
+  NIE przenosić jej na udraznianiekanalizacji.eu ani inne marki.
+- Reszta standardowo: unikalna treść per dzielnica, tylko tematyka hydraulik (bez słów udrażnianiowych),
+  FAQ + JSON-LD FAQPage na każdej, jedna dzielnica = jedna strona (bez wymieniania innych dzielnic w treści).
+
 ## Co jest zrobione (stan 23.08.2026)
 
 Strona główna kompletna: navbar (Usługi / O nas / Obszar działania), karta z panelem 24h
@@ -36,13 +47,10 @@ FAQPage (telefon w 1. odpowiedzi), CTA. Slug = 1:1 stary URL z 2019 (Wayback). L
 i w cenniku index (pozycja „udrażnianie rur — od 350 zł"). System jednorazowych kodów do opinii
 USUNIĘTY (23.08.2026) z obu projektów na polecenie właściciela.
 
-## Wersja bliźniacza bez Astro
+## Wersja bliźniacza bez Astro — USUNIĘTA
 
-`C:\Users\lenovo\hydraulik24warszawa-html\` — ten sam wygląd i treści jako czysty index.html
-+ css/style.css; kod wzorowany strukturalnie na starym hydraulikmokotow.pl (#container, #header,
-#nav, #main-content, sekcje z prostymi id, .left/.right), ale HTML5 i responsywny (4 progi @media).
-Osobne repo git. Docelowa domena tej wersji NIEUSTALONA. Nie przeniesiono ze wzoru: textarea
-z ulicami (stary trik SEO), stopki z frazami, martwego Analyticsa UA.
+Projekt `C:\Users\lenovo\hydraulik24warszawa-html\` (czysty HTML, bliźniak wizualny) skasowany
+w całości 23.08.2026 na polecenie właściciela. NA PRODUKCJĘ IDZIE WERSJA ASTRO (ten projekt).
 
 ## Nierozstrzygnięte / czeka na właściciela
 
@@ -55,7 +63,9 @@ z ulicami (stary trik SEO), stopki z frazami, martwego Analyticsa UA.
       na nowe odpowiedniki; stary `/udraznianie-rur-warszawa/` odzyskuje się sam (ten sam slug)
 - [ ] Duplikat w cenniku: ogólna „naprawa spłuczki" obok „kompaktowej" i „podtynkowej" — właściciel
       nie potwierdził usunięcia
-- [ ] Który projekt (Astro czy czysty HTML) idzie na produkcję — nieustalone
+- [x] Który projekt idzie na produkcję — ASTRO (23.08.2026); wersja HTML skasowana
+- [ ] Podstrony dzielnicowe do odtworzenia (reguły wyżej) — właściciel nie wskazał jeszcze,
+      od których dzielnic zacząć
 - [ ] Repo GitHub + konto FTP Seohost + deploy.yml (po zakupie domeny)
 - [ ] Schema CreativeWorkSeries + aggregateRating (gwiazdki) — do dodania przy dopracowaniu SEO
 
