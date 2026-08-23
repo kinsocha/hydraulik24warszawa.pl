@@ -125,6 +125,22 @@ import Default from "../layouts/Default.astro";
         <p class="pricing-note">Podane ceny dotyczą usług w dni robocze w standardowych godzinach. W soboty, niedziele, święta oraz po 20:00 stawki mogą być wyższe – dokładna kwota zawsze ustalana telefonicznie.</p>
       </section>
 
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CreativeWorkSeries",
+          name: "Hydraulik 24 Warszawa – usługi hydrauliczne",
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "5.0",
+            bestRating: "5",
+            ratingCount: "3",
+          },
+        })}
+      />
+
       <section id="recenzje">
         <div class="section-head">
           <h2>Recenzje klientów</h2>

@@ -68,7 +68,12 @@ w całości 23.08.2026 na polecenie właściciela. NA PRODUKCJĘ IDZIE WERSJA AS
       Pruszków) wg planu w `PLAN-podstrony-dzielnicowe.md`; wspólny CSS `src/styles/podstrona.css`;
       przekierowania 301 w `public/.htaccess`; lista linków dzielnic na index w sekcji Obszar działania
 - [ ] Repo GitHub + konto FTP Seohost + deploy.yml (po zakupie domeny)
-- [ ] Schema CreativeWorkSeries + aggregateRating (gwiazdki) — do dodania przy dopracowaniu SEO
+- [x] Schema CreativeWorkSeries + aggregateRating (gwiazdki) — DODANE na index 23.08.2026
+      (ratingValue 5.0, ratingCount 3 = zgodnie z 3 widocznymi recenzjami; podbijać ratingCount
+      przy dodawaniu kolejnych recenzji). Na podstronach dzielnicowych CELOWO brak aggregateRating —
+      nie mają widocznych opinii, a schema ocen bez opinii na stronie łamie wytyczne Google
+      (ryzyko utraty gwiazdek dla całej domeny). Jeśli mają dostać gwiazdki → najpierw dodać
+      sekcje opinii na te podstrony
 
 ## Notatki techniczne (Astro 7 — nowości vs Astro 5)
 
