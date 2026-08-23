@@ -1,0 +1,187 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Wawer – naprawy hydrauliczne i pogotowie 24h"
+  description="Hydraulik w Wawrze: naprawy w domach jednorodzinnych i mieszkaniach, montaż bojlerów i podgrzewaczy, usuwanie wycieków, wymiana baterii i zaworów. Przyjazd o każdej porze, cena przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Pogotowie hydrauliczne</p>
+            <ul class="media-panel__points">
+              <li>Domy i mieszkania</li>
+              <li>Naprawy i montaż</li>
+              <li>Cały Wawer</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Awarie wodne
+            <span>•</span> Instalacje w domach
+          </p>
+          <h1>Hydraulik Wawer</h1>
+          <p class="biz-card__addr">Wawer i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Doświadczenie z instalacjami w domach</li>
+            <li>Dojazd również w nocy i w dni wolne</li>
+            <li>Kwota ustalona zanim ruszy praca</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zakres prac</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Prace hydrauliczne w Wawrze</h2>
+          <p>Obsługujemy zabudowę jednorodzinną i budynki wielorodzinne.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa spłuczki kompaktowej i podtynkowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>wymiana wodomierzy</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>nowe instalacje wodno-kanalizacyjne</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>prowadzenie rur zgrzewanych PP-R w bruzdach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Domy jednorodzinne to inna hydraulika</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Wawer to w dużej mierze zabudowa jednorodzinna, a dom rządzi się innymi prawami niż mieszkanie w bloku. Jest bojler albo podgrzewacz, dłuższe odcinki instalacji, czasem własne ujęcie wody. Gdy coś przecieka, trzeba wiedzieć, gdzie szukać — i mieć części do sprzętu, który w blokach nie występuje. Mamy jedno i drugie. Montujemy też nowe podgrzewacze, wymieniamy zawory grzejnikowe przed sezonem i prowadzimy instalacje przy rozbudowach.
+          </p>
+          <p>
+            Zasada rozliczenia jest ta sama co wszędzie u nas: opisujesz problem w telefonie, słyszysz cenę, a na miejscu potwierdzamy ją przed rozpoczęciem pracy.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Bojler przestał grzać wodę. Wymienicie go?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — najpierw sprawdzamy, czy problem nie leży w drobiazgu, a jeśli urządzenie jest do wymiany, montujemy nowe i podłączamy je do istniejącej instalacji.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Dojeżdżacie do domów na obrzeżach Wawra?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, obsługujemy cały Wawer, także osiedla domów jednorodzinnych. Zadzwoń pod 123456789 — przy zgłoszeniu podamy czas dojazdu i cenę.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy nocna wizyta kosztuje więcej?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Po godzinie 20:00 oraz w weekendy i święta stawka może być wyższa niż w standardowych godzinach. Dokładną kwotę zawsze usłyszysz w telefonie, przed przyjazdem.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Wymieniacie wodomierze?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, wymieniamy wodomierze w domach i mieszkaniach. Po montażu zgłoszenie stanu i plomb odbywa się według wymogów lokalnego dostawcy wody.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Budujemy łazienkę na poddaszu. Poprowadzicie instalację?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — projektujemy podejścia pod nowe punkty, układamy rury zgrzewane PP-R i przed zabudową wykonujemy próbę szczelności, żeby ściany można było zamykać bez obaw.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Pytania i odpowiedzi – hydraulik Wawer</h2>
+        </div>
+        <details>
+          <summary>Bojler przestał grzać wodę. Wymienicie go?</summary>
+          <p>Tak — najpierw sprawdzamy, czy problem nie leży w drobiazgu, a jeśli urządzenie jest do wymiany, montujemy nowe i podłączamy je do istniejącej instalacji.</p>
+        </details>
+        <details>
+          <summary>Dojeżdżacie do domów na obrzeżach Wawra?</summary>
+          <p>Tak, obsługujemy cały Wawer, także osiedla domów jednorodzinnych. Zadzwoń pod 123456789 — przy zgłoszeniu podamy czas dojazdu i cenę.</p>
+        </details>
+        <details>
+          <summary>Czy nocna wizyta kosztuje więcej?</summary>
+          <p>Po godzinie 20:00 oraz w weekendy i święta stawka może być wyższa niż w standardowych godzinach. Dokładną kwotę zawsze usłyszysz w telefonie, przed przyjazdem.</p>
+        </details>
+        <details>
+          <summary>Wymieniacie wodomierze?</summary>
+          <p>Tak, wymieniamy wodomierze w domach i mieszkaniach. Po montażu zgłoszenie stanu i plomb odbywa się według wymogów lokalnego dostawcy wody.</p>
+        </details>
+        <details>
+          <summary>Budujemy łazienkę na poddaszu. Poprowadzicie instalację?</summary>
+          <p>Tak — projektujemy podejścia pod nowe punkty, układamy rury zgrzewane PP-R i przed zabudową wykonujemy próbę szczelności, żeby ściany można było zamykać bez obaw.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-wesola/">Hydraulik Wesoła</a></li>
+          <li><a href="/hydraulik-warszawa-rembertow/">Hydraulik Rembertów</a></li>
+          <li><a href="/hydraulik-warszawa-wilanow/">Hydraulik Wilanów</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Coś przecieka albo nie działa?</h2>
+          <p>
+            Zadzwoń i opisz sytuację — podamy cenę oraz termin przyjazdu, także tego samego dnia. Numer czynny całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

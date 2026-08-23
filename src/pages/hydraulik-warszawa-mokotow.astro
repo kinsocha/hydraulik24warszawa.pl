@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Mokotów – naprawy i pogotowie hydrauliczne 24h"
+  description="Hydraulik na Mokotowie: usuwanie awarii wodnych w blokach i apartamentowcach, naprawa spłuczek, wymiana baterii i zaworów, instalacje przy remontach. Całodobowo, kwota podawana przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Pogotowie hydrauliczne</p>
+            <ul class="media-panel__points">
+              <li>Bloki i apartamentowce</li>
+              <li>Awarie wodne</li>
+              <li>Cały Mokotów</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Naprawy i wymiany
+            <span>•</span> Awarie 24h
+          </p>
+          <h1>Hydraulik Mokotów</h1>
+          <p class="biz-card__addr">Mokotów i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Szybka reakcja przy uciekającej wodzie</li>
+            <li>Uczciwa wycena przed rozpoczęciem pracy</li>
+            <li>Faktury dla najemców i firm</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Co robimy</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne na Mokotowie</h2>
+          <p>Mieszkania prywatne, lokale na wynajem i biura.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa spłuczki kompaktowej i podtynkowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>silikonowanie wanny, brodzika i umywalki</li>
+          <li>wymiana wodomierzy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>nowe instalacje wodno-kanalizacyjne w mieszkaniach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Mieszkania własne i lokale na wynajem</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Mokotów to u nas dwie grupy zleceń. Pierwsza — klasyka: awaria wodna, wymiana baterii, cieknąca spłuczka. Druga to mieszkania na wynajem. Właściciele, często mieszkający gdzie indziej, potrzebują fachowca, który dogada się z najemcą, umówi wizytę, zrobi robotę i wyśle fakturę — bez angażowania właściciela w każdy szczegół. Robimy tak na co dzień. Po skończonej pracy właściciel dostaje krótkie podsumowanie: co było zepsute, co wymieniliśmy.
+          </p>
+          <p>
+            Awarie z uciekającą wodą mają u nas zawsze pierwszeństwo. Zakręć zawory i dzwoń — resztą zajmiemy się na miejscu.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Wynajmuję mieszkanie na Mokotowie. Umówicie się bezpośrednio z najemcą?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, to u nas standard — kontaktujemy się z najemcą, ustalamy termin i po pracy przesyłamy właścicielowi podsumowanie oraz fakturę. Zadzwoń pod 123456789 i przekaż nam kontakt.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Co zrobić zanim przyjedziecie do awarii?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Zakręć zawór przy urządzeniu, z którego leci woda, albo główny zawór w mieszkaniu. To zatrzyma szkody do naszego przyjazdu — resztę zrobimy na miejscu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy kwota z telefonu może się zmienić?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tylko jeśli na miejscu zakres okaże się inny niż w rozmowie — wtedy nową kwotę podajemy przed rozpoczęciem pracy. Nigdy po fakcie.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Naprawiacie spłuczki podtynkowe?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, wymieniamy zawory napełniające i mechanizmy spustowe przez otwór przycisku — bez kucia płytek. Obsługujemy popularne systemy stelaży.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy pracujecie także w biurach?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, obsługujemy biura i lokale usługowe. Wizytę można umówić poza godzinami pracy zespołu, żeby naprawa nikomu nie przeszkadzała.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Najczęstsze pytania – hydraulik Mokotów</h2>
+        </div>
+        <details>
+          <summary>Wynajmuję mieszkanie na Mokotowie. Umówicie się bezpośrednio z najemcą?</summary>
+          <p>Tak, to u nas standard — kontaktujemy się z najemcą, ustalamy termin i po pracy przesyłamy właścicielowi podsumowanie oraz fakturę. Zadzwoń pod 123456789 i przekaż nam kontakt.</p>
+        </details>
+        <details>
+          <summary>Co zrobić zanim przyjedziecie do awarii?</summary>
+          <p>Zakręć zawór przy urządzeniu, z którego leci woda, albo główny zawór w mieszkaniu. To zatrzyma szkody do naszego przyjazdu — resztę zrobimy na miejscu.</p>
+        </details>
+        <details>
+          <summary>Czy kwota z telefonu może się zmienić?</summary>
+          <p>Tylko jeśli na miejscu zakres okaże się inny niż w rozmowie — wtedy nową kwotę podajemy przed rozpoczęciem pracy. Nigdy po fakcie.</p>
+        </details>
+        <details>
+          <summary>Naprawiacie spłuczki podtynkowe?</summary>
+          <p>Tak, wymieniamy zawory napełniające i mechanizmy spustowe przez otwór przycisku — bez kucia płytek. Obsługujemy popularne systemy stelaży.</p>
+        </details>
+        <details>
+          <summary>Czy pracujecie także w biurach?</summary>
+          <p>Tak, obsługujemy biura i lokale usługowe. Wizytę można umówić poza godzinami pracy zespołu, żeby naprawa nikomu nie przeszkadzała.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-srodmiescie/">Hydraulik Śródmieście</a></li>
+          <li><a href="/hydraulik-warszawa-ochota/">Hydraulik Ochota</a></li>
+          <li><a href="/hydraulik-warszawa-ursynow/">Hydraulik Ursynów</a></li>
+          <li><a href="/hydraulik-warszawa-wilanow/">Hydraulik Wilanów</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Zgłoś naprawę na Mokotowie</h2>
+          <p>
+            Opisz usterkę, a poznasz cenę i termin jeszcze w tej samej rozmowie. Odbieramy całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

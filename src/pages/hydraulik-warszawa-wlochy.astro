@@ -1,0 +1,187 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Włochy – pogotowie hydrauliczne i naprawy 24h"
+  description="Hydraulik we Włochach: usuwanie awarii wodnych, wymiana baterii i zaworów, naprawa spłuczek, podłączanie AGD w domach i mieszkaniach. Praca całą dobę, wycena przed rozpoczęciem roboty."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Pogotowie hydrauliczne</p>
+            <ul class="media-panel__points">
+              <li>Domy i mieszkania</li>
+              <li>Awarie i naprawy</li>
+              <li>Całe Włochy</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Awarie 24h
+            <span>•</span> Montaż i wymiany
+          </p>
+          <h1>Hydraulik Włochy</h1>
+          <p class="biz-card__addr">Włochy i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Szybki kontakt i konkretna rozmowa</li>
+            <li>Cena znana zanim ruszy praca</li>
+            <li>Obsługa domów i firm</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zakres usług</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne we Włochach</h2>
+          <p>Naprawy, montaż i instalacje w zabudowie mieszanej.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>naprawa spłuczki kompaktowej i podtynkowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>wymiana wodomierzy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Od starych Włoch po nowe inwestycje</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Włochy łączą starą, willową zabudowę z nowymi osiedlami i sporą liczbą firm. Dla nas oznacza to różnorodność: rano wymiana bojlera w przedwojennym domu, po południu podłączenie zmywarki w świeżym mieszkaniu, wieczorem awaria w lokalu firmowym. Instalacje w starszych domach bywają prowadzone nietypowo — zanim coś odetniemy albo wymienimy, ustalamy, którędy faktycznie biegnie woda. To oszczędza i czas, i pieniądze.
+          </p>
+          <p>
+            Kwota za robotę pada w telefonie. Na miejscu potwierdzamy ją przed rozpoczęciem pracy — i tyle właśnie płacisz.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Jak szybko przyjedzie fachowiec do awarii we Włochach?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Przy uciekającej wodzie ruszamy jak najszybciej, o dowolnej porze doby. Zadzwoń pod 123456789 — konkretny czas dojazdu podamy przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "W starym domu nie wiadomo, którędy idą rury. Poradzicie sobie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — najpierw ustalamy przebieg instalacji i lokalizujemy zawory, a dopiero potem zabieramy się za naprawę. W starszych domach to standardowy pierwszy krok.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Obsługujecie firmy i lokale?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, pracujemy dla firm, magazynów i lokali usługowych. Wystawiamy faktury, a terminy dopasowujemy do godzin pracy obiektu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kiedy poznam cenę usługi?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Wstępną kwotę usłyszysz już w telefonie. Na miejscu potwierdzamy ją po obejrzeniu instalacji — zawsze zanim zaczniemy robotę.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy montujecie sprzęt kupiony samodzielnie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, montujemy baterie i urządzenia kupione przez klienta. Możemy też przywieźć własny, sprawdzony materiał — jak wolisz.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Najczęstsze pytania – hydraulik Włochy</h2>
+        </div>
+        <details>
+          <summary>Jak szybko przyjedzie fachowiec do awarii we Włochach?</summary>
+          <p>Przy uciekającej wodzie ruszamy jak najszybciej, o dowolnej porze doby. Zadzwoń pod 123456789 — konkretny czas dojazdu podamy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>W starym domu nie wiadomo, którędy idą rury. Poradzicie sobie?</summary>
+          <p>Tak — najpierw ustalamy przebieg instalacji i lokalizujemy zawory, a dopiero potem zabieramy się za naprawę. W starszych domach to standardowy pierwszy krok.</p>
+        </details>
+        <details>
+          <summary>Obsługujecie firmy i lokale?</summary>
+          <p>Tak, pracujemy dla firm, magazynów i lokali usługowych. Wystawiamy faktury, a terminy dopasowujemy do godzin pracy obiektu.</p>
+        </details>
+        <details>
+          <summary>Kiedy poznam cenę usługi?</summary>
+          <p>Wstępną kwotę usłyszysz już w telefonie. Na miejscu potwierdzamy ją po obejrzeniu instalacji — zawsze zanim zaczniemy robotę.</p>
+        </details>
+        <details>
+          <summary>Czy montujecie sprzęt kupiony samodzielnie?</summary>
+          <p>Tak, montujemy baterie i urządzenia kupione przez klienta. Możemy też przywieźć własny, sprawdzony materiał — jak wolisz.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-ochota/">Hydraulik Ochota</a></li>
+          <li><a href="/hydraulik-warszawa-ursus/">Hydraulik Ursus</a></li>
+          <li><a href="/hydraulik-warszawa-bemowo/">Hydraulik Bemowo</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Awaria albo montaż we Włochach?</h2>
+          <p>
+            Krótki opis przez telefon wystarczy — podamy kwotę i godzinę przyjazdu. Numer czynny całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

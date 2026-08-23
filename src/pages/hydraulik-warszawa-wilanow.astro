@@ -1,0 +1,187 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Wilanów – montaż, naprawy i awarie wodne"
+  description="Hydraulik w Wilanowie: montaż baterii i stelaży podtynkowych, podłączanie AGD, naprawy spłuczek, usuwanie wycieków w nowych apartamentach i domach. Całodobowo, wycena przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Montaż i naprawy</p>
+            <ul class="media-panel__points">
+              <li>Nowe apartamenty i domy</li>
+              <li>Awarie wodne</li>
+              <li>Cały Wilanów</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Instalacje wodne
+            <span>•</span> Pogotowie 24h
+          </p>
+          <h1>Hydraulik Wilanów</h1>
+          <p class="biz-card__addr">Wilanów i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Staranny montaż w wykończonych wnętrzach</li>
+            <li>Doradztwo przed zakupem armatury</li>
+            <li>Cena podana przed rozpoczęciem pracy</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zobacz usługi</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne w Wilanowie</h2>
+          <p>Montaż, wymiany i naprawy w mieszkaniach oraz domach.</p>
+        </div>
+        <ul class="services-list">
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>naprawa spłuczki podtynkowej</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>montaż brodzika i kabiny prysznicowej</li>
+          <li>montaż i wymiana wanny</li>
+          <li>silikonowanie wanny, brodzika i umywalki</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Praca w nowych wnętrzach wymaga staranności</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            W Wilanowie większość zleceń to nowe budownictwo: apartamenty z ostatnich kilkunastu lat i domy na świeżo urządzonych osiedlach. W takich wnętrzach nie ma miejsca na fuszerkę — porysowana płytka czy zachlapany kamienny blat kosztują więcej niż sama usługa. Dlatego pracujemy ostrożnie, zabezpieczamy powierzchnie wokół i zostawiamy łazienkę w stanie, w jakim ją zastaliśmy. Często montujemy sprzęt z wyższej półki: baterie podtynkowe, deszczownice, systemy filtracji wody.
+          </p>
+          <p>
+            Jeśli dopiero wybierasz armaturę, zadzwoń przed zakupem. Podpowiemy, co realnie sprawdzi się w danym miejscu — zdarza się, że piękny katalogowo model nie pasuje do istniejących przyłączy.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Montujecie baterie podtynkowe i deszczownice?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, montujemy armaturę podtynkową i natryski, także modele z wyższej półki. Przy nowym montażu sprawdzamy przyłącza, zanim cokolwiek trafi na ścianę.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy przy pracy w wykończonej łazience coś może ucierpieć?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Pracujemy ostrożnie i zabezpieczamy powierzchnie wokół miejsca montażu. Po skończonej robocie łazienka wygląda tak, jak przed naszym przyjazdem.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak szybko przyjedziecie do awarii w Wilanowie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Przy uciekającej wodzie ruszamy jak najszybciej, o każdej porze doby. Zadzwoń pod numer 123456789, a przy zgłoszeniu podamy konkretny czas.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Zamontujecie system odwróconej osmozy pod zlewem?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, montujemy filtry kuchenne i systemy odwróconej osmozy wraz z osobnym kranikiem. Wymieniamy też wkłady w już działających zestawach.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Od czego zależy cena montażu?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Od kilku rzeczy: rodzaju sprzętu, stanu przyłączy i zakresu prac przygotowawczych. Kwotę podajemy w telefonie i potwierdzamy na miejscu — zawsze przed rozpoczęciem pracy.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Najczęstsze pytania – hydraulik Wilanów</h2>
+        </div>
+        <details>
+          <summary>Montujecie baterie podtynkowe i deszczownice?</summary>
+          <p>Tak, montujemy armaturę podtynkową i natryski, także modele z wyższej półki. Przy nowym montażu sprawdzamy przyłącza, zanim cokolwiek trafi na ścianę.</p>
+        </details>
+        <details>
+          <summary>Czy przy pracy w wykończonej łazience coś może ucierpieć?</summary>
+          <p>Pracujemy ostrożnie i zabezpieczamy powierzchnie wokół miejsca montażu. Po skończonej robocie łazienka wygląda tak, jak przed naszym przyjazdem.</p>
+        </details>
+        <details>
+          <summary>Jak szybko przyjedziecie do awarii w Wilanowie?</summary>
+          <p>Przy uciekającej wodzie ruszamy jak najszybciej, o każdej porze doby. Zadzwoń pod numer 123456789, a przy zgłoszeniu podamy konkretny czas.</p>
+        </details>
+        <details>
+          <summary>Zamontujecie system odwróconej osmozy pod zlewem?</summary>
+          <p>Tak, montujemy filtry kuchenne i systemy odwróconej osmozy wraz z osobnym kranikiem. Wymieniamy też wkłady w już działających zestawach.</p>
+        </details>
+        <details>
+          <summary>Od czego zależy cena montażu?</summary>
+          <p>Od kilku rzeczy: rodzaju sprzętu, stanu przyłączy i zakresu prac przygotowawczych. Kwotę podajemy w telefonie i potwierdzamy na miejscu — zawsze przed rozpoczęciem pracy.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w sąsiednich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-mokotow/">Hydraulik Mokotów</a></li>
+          <li><a href="/hydraulik-warszawa-ursynow/">Hydraulik Ursynów</a></li>
+          <li><a href="/hydraulik-piaseczno/">Hydraulik Piaseczno</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Montaż albo naprawa w Wilanowie?</h2>
+          <p>
+            Opowiedz, co jest do zrobienia, a przedstawimy cenę i wolny termin. Odbieramy całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

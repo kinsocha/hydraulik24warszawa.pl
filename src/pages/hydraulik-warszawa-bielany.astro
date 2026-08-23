@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Bielany – awarie wodne, naprawy i instalacje"
+  description="Hydraulik na Bielanach: usuwanie wycieków, naprawa i wymiana baterii, spłuczek oraz zaworów, podłączanie AGD, przeróbki przy remontach. Dojazd całą dobę, cena znana przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Awarie wodne</p>
+            <ul class="media-panel__points">
+              <li>Naprawy i wymiany</li>
+              <li>Instalacje przy remontach</li>
+              <li>Całe Bielany</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Awarie wodne
+            <span>•</span> Naprawy 24h
+          </p>
+          <h1>Hydraulik Bielany</h1>
+          <p class="biz-card__addr">Bielany i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Rzetelna diagnoza zamiast zgadywania</li>
+            <li>Cena ustalona przed rozpoczęciem pracy</li>
+            <li>Porządek po skończonej robocie</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zakres usług</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Zakres prac hydraulicznych na Bielanach</h2>
+          <p>Naprawy bieżące, wymiany armatury i instalacje wodne.</p>
+        </div>
+        <ul class="services-list">
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>wymiana zaworu napełniającego i mechanizmu spustowego</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>wymiana wodomierzy</li>
+          <li>nowe instalacje wodno-kanalizacyjne w mieszkaniach</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Od kapiącego kranu po remont łazienki</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Na Bielanach obsługujemy pełen przekrój budynków — od bloków z wielkiej płyty po nowsze inwestycje. W starszych mieszkaniach częsty scenariusz to armatura, która przepracowała dwadzieścia lat: kapiący kran, twardo chodzący zawór, spłuczka dolewająca wodę. Czasem wystarczy wymiana uszczelki albo głowicy, nie całej baterii — i mówimy to wprost, zamiast naciągać na nowy sprzęt. Przy remontach przerabiamy podejścia pod nowy układ łazienki czy kuchni.
+          </p>
+          <p>
+            Do każdej wizyty przygotowujemy się w rozmowie telefonicznej: pytamy o objawy i sprzęt, pakujemy właściwe części. Efekt — zdecydowana większość napraw kończy się za pierwszym razem.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Kran kapie od tygodnia. Wymiana baterii czy naprawa?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Zależy od stanu baterii. Często wystarczy wymiana głowicy lub uszczelek — jeśli tak jest, mówimy to wprost. Nową baterię proponujemy tylko wtedy, gdy naprawa nie ma sensu ekonomicznego.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Woda kapie z sufitu u sąsiada, wskazują na mnie. Pomożecie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, sprawdzimy instalację w Twoim mieszkaniu i ustalimy, czy źródło przecieku jest po Twojej stronie. Zadzwoń pod 123456789 — takie sprawy traktujemy pilnie.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Ile trwa typowa naprawa?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Większość standardowych prac — wymiana baterii, zaworów, naprawa spłuczki — zamyka się w jednej wizycie. Dłuższe są tylko prace remontowe, o czym uprzedzamy przy wycenie.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy przyjeżdżacie w niedziele?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, pracujemy w każdy dzień tygodnia, całą dobę. W niedziele i święta stawka może być wyższa — dokładna kwota zawsze pada przy zgłoszeniu telefonicznym.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Wymieniacie zawory grzejnikowe?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, wymieniamy zawory grzejnikowe i głowice termostatyczne. Najlepiej robić to poza sezonem grzewczym, ale przy awarii działamy od razu.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Pytania klientów – hydraulik Bielany</h2>
+        </div>
+        <details>
+          <summary>Kran kapie od tygodnia. Wymiana baterii czy naprawa?</summary>
+          <p>Zależy od stanu baterii. Często wystarczy wymiana głowicy lub uszczelek — jeśli tak jest, mówimy to wprost. Nową baterię proponujemy tylko wtedy, gdy naprawa nie ma sensu ekonomicznego.</p>
+        </details>
+        <details>
+          <summary>Woda kapie z sufitu u sąsiada, wskazują na mnie. Pomożecie?</summary>
+          <p>Tak, sprawdzimy instalację w Twoim mieszkaniu i ustalimy, czy źródło przecieku jest po Twojej stronie. Zadzwoń pod 123456789 — takie sprawy traktujemy pilnie.</p>
+        </details>
+        <details>
+          <summary>Ile trwa typowa naprawa?</summary>
+          <p>Większość standardowych prac — wymiana baterii, zaworów, naprawa spłuczki — zamyka się w jednej wizycie. Dłuższe są tylko prace remontowe, o czym uprzedzamy przy wycenie.</p>
+        </details>
+        <details>
+          <summary>Czy przyjeżdżacie w niedziele?</summary>
+          <p>Tak, pracujemy w każdy dzień tygodnia, całą dobę. W niedziele i święta stawka może być wyższa — dokładna kwota zawsze pada przy zgłoszeniu telefonicznym.</p>
+        </details>
+        <details>
+          <summary>Wymieniacie zawory grzejnikowe?</summary>
+          <p>Tak, wymieniamy zawory grzejnikowe i głowice termostatyczne. Najlepiej robić to poza sezonem grzewczym, ale przy awarii działamy od razu.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w sąsiednich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-zoliborz/">Hydraulik Żoliborz</a></li>
+          <li><a href="/hydraulik-warszawa-bemowo/">Hydraulik Bemowo</a></li>
+          <li><a href="/hydraulik-warszawa-bialoleka/">Hydraulik Białołęka</a></li>
+          <li><a href="/hydraulik-warszawa-wola/">Hydraulik Wola</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Naprawa na Bielanach do umówienia?</h2>
+          <p>
+            Jedna rozmowa wystarczy: opisujesz usterkę, dostajesz cenę i termin. Dzwoń o każdej porze: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

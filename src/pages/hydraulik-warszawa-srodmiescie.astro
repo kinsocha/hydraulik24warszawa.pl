@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Śródmieście – naprawy, awarie i instalacje 24h"
+  description="Hydraulik w Śródmieściu: naprawy w mieszkaniach, biurach i lokalach usługowych. Usuwanie wycieków, wymiana baterii i spłuczek, instalacje przy remontach. Całodobowo, cena ustalana przed pracą."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Naprawy i awarie</p>
+            <ul class="media-panel__points">
+              <li>Mieszkania i biura</li>
+              <li>Lokale usługowe</li>
+              <li>Całe Śródmieście</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Naprawy i montaż
+            <span>•</span> Awarie wodne
+          </p>
+          <h1>Hydraulik Śródmieście</h1>
+          <p class="biz-card__addr">Śródmieście i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Obsługa mieszkań, biur i lokali</li>
+            <li>Faktury dla firm i wspólnot</li>
+            <li>Kwota potwierdzona zanim zaczniemy</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Co robimy</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne w Śródmieściu</h2>
+          <p>Pełen zakres prac w budynkach mieszkalnych i komercyjnych.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>naprawa spłuczki podtynkowej</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>wymiana wodomierzy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>nowe instalacje wodno-kanalizacyjne w mieszkaniach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Mieszkania, biura i lokale w centrum</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            W Śródmieściu obok zwykłych mieszkań obsługujemy sporo biur i lokali usługowych — kawiarni, gabinetów, punktów handlowych. Tam liczy się czas: cieknąca toaleta w lokalu gastronomicznym to problem tu i teraz, nie za trzy dni. Dlatego przy zgłoszeniu od razu ustalamy porę wizyty, która nie wywróci dnia pracy lokalu. Naprawy w kamienicach mają swoją specyfikę — starsza armatura, nietypowe przyłącza — i na to też jesteśmy przygotowani.
+          </p>
+          <p>
+            Rozliczenie bez niespodzianek. Cena pada w telefonie, a jeśli zakres na miejscu jest inny niż w rozmowie, nową kwotę potwierdzamy przed rozpoczęciem pracy. Na życzenie faktura.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Prowadzę lokal w Śródmieściu. Przyjedziecie poza godzinami otwarcia?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, pracujemy całą dobę, więc naprawę można umówić rano przed otwarciem albo wieczorem po zamknięciu. Zadzwoń pod 123456789 i ustalimy porę, która nie zakłóci pracy lokalu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Spłuczka podtynkowa przecieka. Trzeba kuć ścianę?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Prawie nigdy. Do mechanizmów spłuczki podtynkowej dostajemy się przez otwór przycisku — tamtędy wymieniamy zawór napełniający i mechanizm spustowy bez naruszania płytek.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kiedy poznam cenę naprawy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Wstępnie już w rozmowie telefonicznej. Na miejscu, po obejrzeniu usterki, kwota jest potwierdzana — zawsze przed rozpoczęciem pracy i bez zmian przy rozliczeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy wystawiacie faktury dla firm?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak. Firma jest zarejestrowana, posiada ubezpieczenie OC działalności i wystawia faktury — obsługujemy też biura, wspólnoty i administracje budynków.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Montujecie toalety podwieszane?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, montujemy stelaże podtynkowe i toalety podwieszane, wymieniamy też same miski oraz przyciski. Doradzimy przed zakupem, co sprawdzi się w danej łazience.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Częste pytania – hydraulik Śródmieście</h2>
+        </div>
+        <details>
+          <summary>Prowadzę lokal w Śródmieściu. Przyjedziecie poza godzinami otwarcia?</summary>
+          <p>Tak, pracujemy całą dobę, więc naprawę można umówić rano przed otwarciem albo wieczorem po zamknięciu. Zadzwoń pod 123456789 i ustalimy porę, która nie zakłóci pracy lokalu.</p>
+        </details>
+        <details>
+          <summary>Spłuczka podtynkowa przecieka. Trzeba kuć ścianę?</summary>
+          <p>Prawie nigdy. Do mechanizmów spłuczki podtynkowej dostajemy się przez otwór przycisku — tamtędy wymieniamy zawór napełniający i mechanizm spustowy bez naruszania płytek.</p>
+        </details>
+        <details>
+          <summary>Kiedy poznam cenę naprawy?</summary>
+          <p>Wstępnie już w rozmowie telefonicznej. Na miejscu, po obejrzeniu usterki, kwota jest potwierdzana — zawsze przed rozpoczęciem pracy i bez zmian przy rozliczeniu.</p>
+        </details>
+        <details>
+          <summary>Czy wystawiacie faktury dla firm?</summary>
+          <p>Tak. Firma jest zarejestrowana, posiada ubezpieczenie OC działalności i wystawia faktury — obsługujemy też biura, wspólnoty i administracje budynków.</p>
+        </details>
+        <details>
+          <summary>Montujecie toalety podwieszane?</summary>
+          <p>Tak, montujemy stelaże podtynkowe i toalety podwieszane, wymieniamy też same miski oraz przyciski. Doradzimy przed zakupem, co sprawdzi się w danej łazience.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-wola/">Hydraulik Wola</a></li>
+          <li><a href="/hydraulik-warszawa-ochota/">Hydraulik Ochota</a></li>
+          <li><a href="/hydraulik-warszawa-mokotow/">Hydraulik Mokotów</a></li>
+          <li><a href="/hydraulik-warszawa-zoliborz/">Hydraulik Żoliborz</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Potrzebujesz fachowca w centrum?</h2>
+          <p>
+            Opisz usterkę przez telefon — podamy cenę i dogodny termin, także poza standardowymi godzinami. Numer całodobowy: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

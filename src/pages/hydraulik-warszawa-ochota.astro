@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Ochota – montaż baterii, naprawy i awarie 24h"
+  description="Hydraulik na Ochocie: wymiana baterii i zaworów, naprawa spłuczek, usuwanie wycieków w kamienicach i blokach, podłączanie AGD. Przyjazdy całodobowe, wycena przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Naprawy i montaż</p>
+            <ul class="media-panel__points">
+              <li>Kamienice i bloki</li>
+              <li>Pogotowie wodne</li>
+              <li>Cała Ochota</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Montaż baterii
+            <span>•</span> Awarie wodne
+          </p>
+          <h1>Hydraulik Ochota</h1>
+          <p class="biz-card__addr">Ochota i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Znajomość starszych instalacji</li>
+            <li>Konkretna kwota przed rozpoczęciem pracy</li>
+            <li>Przyjazd także wieczorem i w weekend</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zakres usług</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Co robi hydraulik na Ochocie</h2>
+          <p>Naprawy bieżące i prace montażowe w mieszkaniach oraz lokalach.</p>
+        </div>
+        <ul class="services-list">
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>naprawa spłuczki podtynkowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>wymiana wodomierzy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Stara Ochota i nowe wnętrza</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Spora część Ochoty to przedwojenne i powojenne kamienice. Instalacje bywają tam wielokrotnie przerabiane — w jednej łazience potrafi spotkać się stal, miedź i plastik z trzech różnych remontów. Zanim cokolwiek wymienimy, sprawdzamy, co z czym jest połączone i gdzie faktycznie leży problem. Dzięki temu nie mnożymy pracy ponad potrzebę. Obok kamienic obsługujemy też bloki i świeżo wykończone mieszkania, gdzie królują montaże: baterie, AGD, biały montaż.
+          </p>
+          <p>
+            Wycena zawsze przed pracą. Krótko: dzwonisz, opisujesz, znasz kwotę. Ta ustalona na miejscu przed rozpoczęciem roboty już się nie zmienia.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "W kamienicy mam starą instalację z różnych materiałów. To problem?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nie — łączenie starszych rur z nową armaturą to nasza codzienność na Ochocie. Dobieramy złączki i przejścia tak, żeby całość była szczelna i trwała.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak szybko przyjedziecie do awarii wieczorem?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Pracujemy całą dobę. Zadzwoń pod 123456789 — przy uciekającej wodzie ruszamy jak najszybciej, a dokładny czas dojazdu podajemy przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Wymiana baterii z moim sprzętem czy z waszym?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Jak wolisz. Montujemy baterie kupione przez klienta albo przywozimy sprawdzony model w uzgodnionym budżecie — decyzja pada podczas rozmowy telefonicznej.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Od czego zależy cena naprawy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Od kilku czynników: rodzaju usterki, stanu instalacji i pory wizyty. Konkretną kwotę podajemy przed rozpoczęciem pracy — bez dopisywania czegokolwiek przy rozliczeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy robicie przeróbki wody przy remoncie kuchni?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — przenosimy podejścia pod nowy układ mebli, prowadzimy rury w bruzdach i wykonujemy próbę szczelności przed zabudową ścian.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Częste pytania – hydraulik Ochota</h2>
+        </div>
+        <details>
+          <summary>W kamienicy mam starą instalację z różnych materiałów. To problem?</summary>
+          <p>Nie — łączenie starszych rur z nową armaturą to nasza codzienność na Ochocie. Dobieramy złączki i przejścia tak, żeby całość była szczelna i trwała.</p>
+        </details>
+        <details>
+          <summary>Jak szybko przyjedziecie do awarii wieczorem?</summary>
+          <p>Pracujemy całą dobę. Zadzwoń pod 123456789 — przy uciekającej wodzie ruszamy jak najszybciej, a dokładny czas dojazdu podajemy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Wymiana baterii z moim sprzętem czy z waszym?</summary>
+          <p>Jak wolisz. Montujemy baterie kupione przez klienta albo przywozimy sprawdzony model w uzgodnionym budżecie — decyzja pada podczas rozmowy telefonicznej.</p>
+        </details>
+        <details>
+          <summary>Od czego zależy cena naprawy?</summary>
+          <p>Od kilku czynników: rodzaju usterki, stanu instalacji i pory wizyty. Konkretną kwotę podajemy przed rozpoczęciem pracy — bez dopisywania czegokolwiek przy rozliczeniu.</p>
+        </details>
+        <details>
+          <summary>Czy robicie przeróbki wody przy remoncie kuchni?</summary>
+          <p>Tak — przenosimy podejścia pod nowy układ mebli, prowadzimy rury w bruzdach i wykonujemy próbę szczelności przed zabudową ścian.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w sąsiednich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-wola/">Hydraulik Wola</a></li>
+          <li><a href="/hydraulik-warszawa-srodmiescie/">Hydraulik Śródmieście</a></li>
+          <li><a href="/hydraulik-warszawa-mokotow/">Hydraulik Mokotów</a></li>
+          <li><a href="/hydraulik-warszawa-wlochy/">Hydraulik Włochy</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Umów fachowca na Ochocie</h2>
+          <p>
+            Zadzwoń, opisz usterkę i poznaj cenę przed przyjazdem. Zgłoszenia całodobowo: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

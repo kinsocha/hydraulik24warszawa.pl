@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Żoliborz – naprawy hydrauliczne i pogotowie"
+  description="Hydraulik na Żoliborzu: naprawy w przedwojennych kamienicach i nowych blokach, usuwanie wycieków, wymiana baterii, spłuczek i zaworów. Dostępność całodobowa, kwota podawana przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Naprawy i awarie</p>
+            <ul class="media-panel__points">
+              <li>Kamienice i bloki</li>
+              <li>Montaż armatury</li>
+              <li>Cały Żoliborz</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Naprawy 24h
+            <span>•</span> Awarie wodne
+          </p>
+          <h1>Hydraulik Żoliborz</h1>
+          <p class="biz-card__addr">Żoliborz i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Poszanowanie zabytkowych wnętrz</li>
+            <li>Cena podana przed rozpoczęciem pracy</li>
+            <li>Naprawy kończone za pierwszym razem</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zakres usług</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Prace hydrauliczne na Żoliborzu</h2>
+          <p>Naprawy bieżące, wymiany i instalacje przy remontach.</p>
+        </div>
+        <ul class="services-list">
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Hydraulika w zabytkowych murach</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Stary Żoliborz to wnętrza, których właściciele pilnują jak oka w głowie — przedwojenna stolarka, oryginalne płytki, lastryko. Przy naprawach w takich mieszkaniach każda dziura w ścianie musi być przemyślana. Dlatego zanim sięgniemy po narzędzia, ustalamy najmniej inwazyjną drogę do usterki. Nowe osiedla po drugiej stronie dzielnicy to z kolei standardowa robota montażowa: baterie, AGD, biały montaż po odbiorze mieszkania.
+          </p>
+          <p>
+            W obu przypadkach zasada ta sama — kwota za pracę pada zanim praca się zacznie. I taka zostaje.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Mieszkanie ma zabytkowy charakter. Naprawicie bez niszczenia wnętrza?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — wybieramy najmniej inwazyjną drogę do usterki i uzgadniamy każdy krok z właścicielem. W starych wnętrzach pracujemy szczególnie ostrożnie.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak szybko przyjedziecie na Żoliborz?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Przy awarii z wodą — jak najszybciej, o każdej porze. Zadzwoń pod numer 123456789, a przy zgłoszeniu podamy dokładny czas dojazdu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kaloryfer jest zimny u góry, chyba zapowietrzony. Pomożecie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — odpowietrzamy grzejniki i wymieniamy zawory oraz głowice termostatyczne. Jeśli problem leży głębiej w instalacji, powiemy o tym wprost po sprawdzeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy cena obejmuje części?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Jeśli ustalimy w rozmowie, że przywozimy materiał — tak, kwota obejmuje robociznę, dojazd i części. Wszystko jest jasne przed rozpoczęciem pracy.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Montujecie filtry do wody pitnej?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, montujemy filtry kuchenne i systemy odwróconej osmozy z dodatkowym kranikiem. Serwisujemy też istniejące zestawy — wymieniamy wkłady i sprawdzamy szczelność.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Pytania i odpowiedzi – hydraulik Żoliborz</h2>
+        </div>
+        <details>
+          <summary>Mieszkanie ma zabytkowy charakter. Naprawicie bez niszczenia wnętrza?</summary>
+          <p>Tak — wybieramy najmniej inwazyjną drogę do usterki i uzgadniamy każdy krok z właścicielem. W starych wnętrzach pracujemy szczególnie ostrożnie.</p>
+        </details>
+        <details>
+          <summary>Jak szybko przyjedziecie na Żoliborz?</summary>
+          <p>Przy awarii z wodą — jak najszybciej, o każdej porze. Zadzwoń pod numer 123456789, a przy zgłoszeniu podamy dokładny czas dojazdu.</p>
+        </details>
+        <details>
+          <summary>Kaloryfer jest zimny u góry, chyba zapowietrzony. Pomożecie?</summary>
+          <p>Tak — odpowietrzamy grzejniki i wymieniamy zawory oraz głowice termostatyczne. Jeśli problem leży głębiej w instalacji, powiemy o tym wprost po sprawdzeniu.</p>
+        </details>
+        <details>
+          <summary>Czy cena obejmuje części?</summary>
+          <p>Jeśli ustalimy w rozmowie, że przywozimy materiał — tak, kwota obejmuje robociznę, dojazd i części. Wszystko jest jasne przed rozpoczęciem pracy.</p>
+        </details>
+        <details>
+          <summary>Montujecie filtry do wody pitnej?</summary>
+          <p>Tak, montujemy filtry kuchenne i systemy odwróconej osmozy z dodatkowym kranikiem. Serwisujemy też istniejące zestawy — wymieniamy wkłady i sprawdzamy szczelność.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-bielany/">Hydraulik Bielany</a></li>
+          <li><a href="/hydraulik-warszawa-wola/">Hydraulik Wola</a></li>
+          <li><a href="/hydraulik-warszawa-srodmiescie/">Hydraulik Śródmieście</a></li>
+          <li><a href="/hydraulik-warszawa-praga-polnoc/">Hydraulik Praga-Północ</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Umów naprawę na Żoliborzu</h2>
+          <p>
+            Wystarczy krótki opis usterki — podamy cenę i termin jeszcze w tej samej rozmowie. Telefon całodobowy: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

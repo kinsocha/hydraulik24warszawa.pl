@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Praga-Północ – pogotowie hydrauliczne i montaż"
+  description="Hydraulik na Pradze-Północ: naprawy w starszych kamienicach i nowych blokach, usuwanie wycieków, wymiana baterii i zaworów, podłączanie AGD. Pogotowie całodobowe, wycena przed pracą."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Awarie i naprawy</p>
+            <ul class="media-panel__points">
+              <li>Pogotowie całodobowe</li>
+              <li>Montaż i wymiany</li>
+              <li>Cała Praga-Północ</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Pogotowie 24h
+            <span>•</span> Instalacje wodne
+          </p>
+          <h1>Hydraulik Praga-Północ</h1>
+          <p class="biz-card__addr">Praga-Północ i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Doświadczenie ze starszymi instalacjami</li>
+            <li>Wycena przed rozpoczęciem pracy</li>
+            <li>Dojazd także w nocy i w święta</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zakres usług</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Zakres usług hydraulicznych na Pradze-Północ</h2>
+          <p>Od drobnych wymian po przeróbki instalacji przy remontach mieszkań.</p>
+        </div>
+        <ul class="services-list">
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>wymiana zaworu napełniającego i mechanizmu spustowego</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>wymiana wodomierzy</li>
+          <li>nowe instalacje wodno-kanalizacyjne w mieszkaniach</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>prowadzenie rur zgrzewanych PP-R w bruzdach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Stare kamienice i nowe bloki</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Praga-Północ to dwa różne światy w jednej dzielnicy. W przedwojennych kamienicach instalacje bywają wiekowe — stalowe rury, zawody z gwintami, zawory, których nikt nie ruszał od lat. Do takich prac podchodzimy ostrożnie i z częściami dobranymi do starszej armatury. W nowych blokach robota wygląda inaczej: wymiana baterii, regulacja spłuczki podtynkowej, podłączenie zmywarki w świeżo urządzanej kuchni.
+          </p>
+          <p>
+            Jedno się nie zmienia. Kwotę za naprawę podajemy w telefonie, a gdyby zakres na miejscu okazał się inny, nową cenę usłyszysz przed rozpoczęciem pracy.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Mieszkam w starej kamienicy. Podejmiecie się naprawy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, starsze instalacje to nasza codzienność na Pradze-Północ. Przywozimy części pasujące do wiekowej armatury i wymieniamy tylko to, co faktycznie wymaga wymiany.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak szybko przyjedziecie do wycieku?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Zadzwoń pod numer 123456789 — przy uciekającej wodzie staramy się być na miejscu jak najszybciej, również w nocy i w dni wolne. Dokładny czas podajemy przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Ile zapłacę za wymianę zaworów pod zlewem?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Konkretną kwotę podajemy przez telefon po krótkim opisie sytuacji. Cena ustalona przed pracą nie zmienia się przy rozliczeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy pracujecie w weekendy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, pracujemy całą dobę przez cały tydzień. W soboty, niedziele i święta stawka może być wyższa niż w dni robocze — dokładną kwotę zawsze podajemy przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Robicie przeróbki instalacji przy remoncie mieszkania?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak. Prowadzimy nowe podejścia wody, przenosimy punkty poboru, układamy rury PP-R w bruzdach, a przed zakryciem ścian wykonujemy próbę szczelności.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Pytania klientów – hydraulik Praga-Północ</h2>
+        </div>
+        <details>
+          <summary>Mieszkam w starej kamienicy. Podejmiecie się naprawy?</summary>
+          <p>Tak, starsze instalacje to nasza codzienność na Pradze-Północ. Przywozimy części pasujące do wiekowej armatury i wymieniamy tylko to, co faktycznie wymaga wymiany.</p>
+        </details>
+        <details>
+          <summary>Jak szybko przyjedziecie do wycieku?</summary>
+          <p>Zadzwoń pod numer 123456789 — przy uciekającej wodzie staramy się być na miejscu jak najszybciej, również w nocy i w dni wolne. Dokładny czas podajemy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Ile zapłacę za wymianę zaworów pod zlewem?</summary>
+          <p>Konkretną kwotę podajemy przez telefon po krótkim opisie sytuacji. Cena ustalona przed pracą nie zmienia się przy rozliczeniu.</p>
+        </details>
+        <details>
+          <summary>Czy pracujecie w weekendy?</summary>
+          <p>Tak, pracujemy całą dobę przez cały tydzień. W soboty, niedziele i święta stawka może być wyższa niż w dni robocze — dokładną kwotę zawsze podajemy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Robicie przeróbki instalacji przy remoncie mieszkania?</summary>
+          <p>Tak. Prowadzimy nowe podejścia wody, przenosimy punkty poboru, układamy rury PP-R w bruzdach, a przed zakryciem ścian wykonujemy próbę szczelności.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w sąsiednich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-targowek/">Hydraulik Targówek</a></li>
+          <li><a href="/hydraulik-warszawa-bialoleka/">Hydraulik Białołęka</a></li>
+          <li><a href="/hydraulik-warszawa-srodmiescie/">Hydraulik Śródmieście</a></li>
+          <li><a href="/hydraulik-warszawa-zoliborz/">Hydraulik Żoliborz</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Zadzwoń i umów naprawę</h2>
+          <p>
+            Powiedz, co przestało działać, a usłyszysz cenę i termin — zanim ktokolwiek weźmie się do pracy. Telefon czynny całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

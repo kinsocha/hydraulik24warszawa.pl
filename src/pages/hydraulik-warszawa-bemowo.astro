@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Bemowo – awarie wodne i naprawy 24h"
+  description="Hydraulik na Bemowie: usuwanie awarii wodnych, montaż baterii, naprawy spłuczek, podłączanie AGD i przeróbki instalacji przy remontach. Przyjazdy całą dobę, cena podawana przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Pogotowie hydrauliczne</p>
+            <ul class="media-panel__points">
+              <li>Awarie wodne</li>
+              <li>Montaż i naprawy</li>
+              <li>Całe Bemowo</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Awarie wodne
+            <span>•</span> Montaż i naprawy
+          </p>
+          <h1>Hydraulik Bemowo</h1>
+          <p class="biz-card__addr">Bemowo i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Przyjazd o umówionej porze</li>
+            <li>Cena znana przed rozpoczęciem pracy</li>
+            <li>Komplet narzędzi i materiałów na miejscu</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zobacz szczegóły</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne na Bemowie</h2>
+          <p>Naprawy, montaż i instalacje wodne w mieszkaniach, domach i lokalach usługowych.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa spłuczki kompaktowej i podtynkowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>silikonowanie wanny, brodzika i umywalki</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>wymiana wodomierzy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Jak pracujemy na Bemowie</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Większość zgłoszeń na Bemowie to mieszkania w blokach: cieknąca spłuczka, bateria do wymiany, wężyk, który zaczął parować, albo pralka do podłączenia po przeprowadzce. Do takich prac przyjeżdżamy z kompletem narzędzi i typowych części, więc zwykle kończymy podczas jednej wizyty. Bywają też większe roboty. Przy remontach prowadzimy nowe podejścia wody, przenosimy punkty poboru i przed zakryciem ścian robimy próbę szczelności.
+          </p>
+          <p>
+            Cenę podajemy w rozmowie telefonicznej, po opisaniu usterki. Jeśli na miejscu zakres okaże się inny, aktualną kwotę usłyszysz zanim weźmiemy się do pracy — nie po fakcie.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Pękł wężyk i woda leje się do szafki. Co robić?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Zakręć zawór przy wężyku albo główny zawór w mieszkaniu i zadzwoń pod numer 123456789. Przy takich awariach na Bemowie staramy się przyjechać jak najszybciej, także w nocy.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy cena jest znana przed rozpoczęciem pracy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak. Wstępną kwotę podajemy przez telefon, a na miejscu potwierdzamy ją po obejrzeniu usterki — zawsze zanim zaczniemy pracę.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy muszę sam kupić baterię albo części?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nie musisz. O potrzebnych materiałach dowiadujemy się podczas rozmowy i przywozimy je ze sobą. Jeśli masz już kupiony sprzęt, po prostu go zamontujemy.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy naprawa zamknie się w jednej wizycie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Najczęściej tak — przyjeżdżamy z narzędziami i typowymi częściami. Druga wizyta zdarza się przy nietypowym sprzęcie, na który trzeba zamówić część.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy wystawiacie faktury?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, firma jest zarejestrowana, ma ubezpieczenie OC działalności i wystawia faktury — także dla wspólnot i firm.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Najczęstsze pytania – hydraulik Bemowo</h2>
+        </div>
+        <details>
+          <summary>Pękł wężyk i woda leje się do szafki. Co robić?</summary>
+          <p>Zakręć zawór przy wężyku albo główny zawór w mieszkaniu i zadzwoń pod numer 123456789. Przy takich awariach na Bemowie staramy się przyjechać jak najszybciej, także w nocy.</p>
+        </details>
+        <details>
+          <summary>Czy cena jest znana przed rozpoczęciem pracy?</summary>
+          <p>Tak. Wstępną kwotę podajemy przez telefon, a na miejscu potwierdzamy ją po obejrzeniu usterki — zawsze zanim zaczniemy pracę.</p>
+        </details>
+        <details>
+          <summary>Czy muszę sam kupić baterię albo części?</summary>
+          <p>Nie musisz. O potrzebnych materiałach dowiadujemy się podczas rozmowy i przywozimy je ze sobą. Jeśli masz już kupiony sprzęt, po prostu go zamontujemy.</p>
+        </details>
+        <details>
+          <summary>Czy naprawa zamknie się w jednej wizycie?</summary>
+          <p>Najczęściej tak — przyjeżdżamy z narzędziami i typowymi częściami. Druga wizyta zdarza się przy nietypowym sprzęcie, na który trzeba zamówić część.</p>
+        </details>
+        <details>
+          <summary>Czy wystawiacie faktury?</summary>
+          <p>Tak, firma jest zarejestrowana, ma ubezpieczenie OC działalności i wystawia faktury — także dla wspólnot i firm.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-wola/">Hydraulik Wola</a></li>
+          <li><a href="/hydraulik-warszawa-bielany/">Hydraulik Bielany</a></li>
+          <li><a href="/hydraulik-warszawa-wlochy/">Hydraulik Włochy</a></li>
+          <li><a href="/hydraulik-warszawa-ursus/">Hydraulik Ursus</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Awaria albo naprawa do umówienia?</h2>
+          <p>
+            Opisz w telefonie, co się dzieje, a podamy cenę i termin przyjazdu. Zgłoszenia przyjmujemy całą dobę. Zadzwoń: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

@@ -1,0 +1,187 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Ursus – naprawy, montaż i awarie wodne 24h"
+  description="Hydraulik w Ursusie: naprawy w nowych osiedlach i starszych blokach, biały montaż, podłączanie AGD, wymiana baterii, usuwanie wycieków. Całodobowo, kwota znana przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Naprawy i awarie</p>
+            <ul class="media-panel__points">
+              <li>Nowe osiedla</li>
+              <li>Starsze bloki</li>
+              <li>Cały Ursus</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Montaż i naprawy
+            <span>•</span> Awarie wodne
+          </p>
+          <h1>Hydraulik Ursus</h1>
+          <p class="biz-card__addr">Ursus i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Jedna wizyta zamiast trzech</li>
+            <li>Cena bez niespodzianek przy rozliczeniu</li>
+            <li>Doradztwo zamiast naciągania</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Pełny zakres</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Zakres usług hydraulicznych w Ursusie</h2>
+          <p>Od wymiany wężyka po kompletną instalację przy remoncie.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>montaż brodzika i kabiny prysznicowej</li>
+          <li>montaż i wymiana wanny</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>naprawa spłuczki kompaktowej i podtynkowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>wymiana wodomierzy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Dzielnica, która się przebudowuje</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Ursus zmienia się na naszych oczach — na dawnych terenach przemysłowych wyrosły całe osiedla. Stąd dwa typowe rodzaje zleceń. W nowych mieszkaniach: biały montaż, podłączenie sprzętów, bateria w miejsce zaślepek od dewelopera. W starszych blokach: wymiany wysłużonej armatury i naprawy po latach eksploatacji. Do obu podchodzimy tak samo — najpierw rozmowa i konkretna kwota, potem robota z częściami przywiezionymi na wizytę.
+          </p>
+          <p>
+            Nie naciągamy. Jeśli da się naprawić taniej, niż wymienić — mówimy o tym pierwsi.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Mam mieszkanie w stanie deweloperskim. Od czego zacząć?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Zadzwoń pod 123456789 i opisz, co jest do zamontowania. Wycenimy cały biały montaż w jednej rozmowie i umówimy termin — zwykle na najbliższe dni.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy zdążycie z naprawą tego samego dnia?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Przy awariach tak — ruszamy jak najszybciej, o każdej porze. Prace planowane umawiamy na dogodny dzień i konkretną godzinę.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Ile kosztuje wymiana baterii kuchennej?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Konkretną kwotę podamy przez telefon, po pytaniu o sprzęt i podejścia. Ustalona cena obejmuje robociznę z dojazdem i nie zmienia się przy rozliczeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Montujecie kabiny prysznicowe?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — montujemy brodziki i kabiny wraz z podłączeniem armatury oraz silikonowaniem. Przed montażem sprawdzamy podejścia i odpływ.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy dostanę fakturę?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, wystawiamy faktury. Firma jest zarejestrowana i posiada ubezpieczenie OC działalności — dokumenty bez problemu.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Częste pytania – hydraulik Ursus</h2>
+        </div>
+        <details>
+          <summary>Mam mieszkanie w stanie deweloperskim. Od czego zacząć?</summary>
+          <p>Zadzwoń pod 123456789 i opisz, co jest do zamontowania. Wycenimy cały biały montaż w jednej rozmowie i umówimy termin — zwykle na najbliższe dni.</p>
+        </details>
+        <details>
+          <summary>Czy zdążycie z naprawą tego samego dnia?</summary>
+          <p>Przy awariach tak — ruszamy jak najszybciej, o każdej porze. Prace planowane umawiamy na dogodny dzień i konkretną godzinę.</p>
+        </details>
+        <details>
+          <summary>Ile kosztuje wymiana baterii kuchennej?</summary>
+          <p>Konkretną kwotę podamy przez telefon, po pytaniu o sprzęt i podejścia. Ustalona cena obejmuje robociznę z dojazdem i nie zmienia się przy rozliczeniu.</p>
+        </details>
+        <details>
+          <summary>Montujecie kabiny prysznicowe?</summary>
+          <p>Tak — montujemy brodziki i kabiny wraz z podłączeniem armatury oraz silikonowaniem. Przed montażem sprawdzamy podejścia i odpływ.</p>
+        </details>
+        <details>
+          <summary>Czy dostanę fakturę?</summary>
+          <p>Tak, wystawiamy faktury. Firma jest zarejestrowana i posiada ubezpieczenie OC działalności — dokumenty bez problemu.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich lokalizacjach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-wlochy/">Hydraulik Włochy</a></li>
+          <li><a href="/hydraulik-warszawa-bemowo/">Hydraulik Bemowo</a></li>
+          <li><a href="/hydraulik-pruszkow/">Hydraulik Pruszków</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Zadzwoń po wycenę w Ursusie</h2>
+          <p>
+            Jedna rozmowa — konkretna kwota i termin przyjazdu. Numer całodobowy: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

@@ -1,0 +1,187 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Białołęka – pogotowie 24h, naprawy i montaż"
+  description="Hydraulik na Białołęce: podłączanie pralek i zmywarek w nowych mieszkaniach, montaż baterii, naprawy spłuczek, usuwanie wycieków. Przyjazdy o każdej porze, kwota ustalana przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Hydraulik na telefon</p>
+            <ul class="media-panel__points">
+              <li>Nowe osiedla i domy</li>
+              <li>Awarie i montaż</li>
+              <li>Cała Białołęka</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Pogotowie 24h
+            <span>•</span> Montaż i naprawy
+          </p>
+          <h1>Hydraulik Białołęka</h1>
+          <p class="biz-card__addr">Białołęka i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Szybkie terminy na prace planowane</li>
+            <li>Wycena telefoniczna bez zobowiązań</li>
+            <li>Praca zamykana podczas jednej wizyty</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Lista usług</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne na Białołęce</h2>
+          <p>Prace wykończeniowe w nowych mieszkaniach i klasyczne naprawy.</p>
+        </div>
+        <ul class="services-list">
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>montaż brodzika i kabiny prysznicowej</li>
+          <li>montaż i wymiana wanny</li>
+          <li>silikonowanie wanny, brodzika i umywalki</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>naprawa spłuczki kompaktowej i podtynkowej</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Mieszkania od dewelopera i domy</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Białołęka rośnie od lat, więc duża część naszej pracy to mieszkania świeżo odebrane od dewelopera: biały montaż, podłączenie pralki i zmywarki, bateria zamiast korków zaślepiających podejścia. Robimy to sprawnie, bo takie zlecenia powtarzają się u nas co tydzień. Druga grupa klientów to właściciele domów — tu dochodzą bojlery, dłuższe instalacje i sezonowa wymiana zaworów grzejnikowych.
+          </p>
+          <p>
+            Termin? Prace planowane umawiamy zwykle na najbliższe dni. Awarie traktujemy poza kolejką — przy uciekającej wodzie liczy się każda godzina.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Odebrałem mieszkanie od dewelopera. Zrobicie biały montaż?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — montujemy umywalki, toalety, wanny, brodziki, baterie i podłączamy sprzęty AGD. Możemy wycenić całość jednym telefonem: zadzwoń pod 123456789.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak szybko umówię montaż pralki?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Prace planowane umawiamy zwykle w ciągu najbliższych dni, a bywa, że tego samego dnia. Termin ustalamy przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy wycena przez telefon do czegoś zobowiązuje?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nie. Opisujesz zakres, my podajemy kwotę — decyzję podejmujesz spokojnie. Cena potwierdzona przed pracą nie zmienia się przy rozliczeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Obsługujecie też domy jednorodzinne?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, pracujemy w domach na terenie całej Białołęki — montujemy bojlery, wymieniamy zawory i prowadzimy instalacje przy rozbudowach.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Co jeśli w nocy pęknie wężyk?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Zakręć zawór przy urządzeniu albo główny zawór w mieszkaniu i dzwoń — pracujemy całą dobę. Nocą i w święta stawka może być wyższa, kwotę podajemy przed przyjazdem.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Częste pytania – hydraulik Białołęka</h2>
+        </div>
+        <details>
+          <summary>Odebrałem mieszkanie od dewelopera. Zrobicie biały montaż?</summary>
+          <p>Tak — montujemy umywalki, toalety, wanny, brodziki, baterie i podłączamy sprzęty AGD. Możemy wycenić całość jednym telefonem: zadzwoń pod 123456789.</p>
+        </details>
+        <details>
+          <summary>Jak szybko umówię montaż pralki?</summary>
+          <p>Prace planowane umawiamy zwykle w ciągu najbliższych dni, a bywa, że tego samego dnia. Termin ustalamy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Czy wycena przez telefon do czegoś zobowiązuje?</summary>
+          <p>Nie. Opisujesz zakres, my podajemy kwotę — decyzję podejmujesz spokojnie. Cena potwierdzona przed pracą nie zmienia się przy rozliczeniu.</p>
+        </details>
+        <details>
+          <summary>Obsługujecie też domy jednorodzinne?</summary>
+          <p>Tak, pracujemy w domach na terenie całej Białołęki — montujemy bojlery, wymieniamy zawory i prowadzimy instalacje przy rozbudowach.</p>
+        </details>
+        <details>
+          <summary>Co jeśli w nocy pęknie wężyk?</summary>
+          <p>Zakręć zawór przy urządzeniu albo główny zawór w mieszkaniu i dzwoń — pracujemy całą dobę. Nocą i w święta stawka może być wyższa, kwotę podajemy przed przyjazdem.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-targowek/">Hydraulik Targówek</a></li>
+          <li><a href="/hydraulik-warszawa-praga-polnoc/">Hydraulik Praga-Północ</a></li>
+          <li><a href="/hydraulik-warszawa-bielany/">Hydraulik Bielany</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Wycena w jednej rozmowie</h2>
+          <p>
+            Powiedz, co jest do zrobienia — od podłączenia pralki po awarię — a podamy cenę i termin. Telefon całodobowy: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

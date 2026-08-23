@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Wola – awarie wodne, montaż i naprawy 24h"
+  description="Hydraulik na Woli: usuwanie awarii w kamienicach i nowych apartamentowcach, naprawa baterii i spłuczek, wymiana zaworów, instalacje przy remontach. Całodobowo, cena ustalana przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Awarie wodne</p>
+            <ul class="media-panel__points">
+              <li>Kamienice i wieżowce</li>
+              <li>Naprawy i montaż</li>
+              <li>Cała Wola</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Pogotowie wodne
+            <span>•</span> Naprawy i wymiany
+          </p>
+          <h1>Hydraulik Wola</h1>
+          <p class="biz-card__addr">Wola i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Doświadczenie z każdym typem zabudowy</li>
+            <li>Wycena przed rozpoczęciem pracy</li>
+            <li>Dostępność również nocą i w święta</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Co robimy</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne na Woli</h2>
+          <p>Od kamienic po najnowsze apartamentowce.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa spłuczki kompaktowej i podtynkowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>silikonowanie wanny, brodzika i umywalki</li>
+          <li>wymiana wodomierzy</li>
+          <li>nowe instalacje wodno-kanalizacyjne w mieszkaniach</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Dzielnica kontrastów instalacyjnych</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Mało która dzielnica ma taki rozstrzał jak Wola: sto lat różnicy między najstarszą a najmłodszą instalacją, z którymi pracujemy w ten sam dzień. W kamienicach trafiamy na żeliwo i stal, w wieżowcach — na nowoczesne rozdzielacze i armaturę podtynkową. Jedno i drugie znamy od podszewki. Sporo robimy też dla najemców i zarządców: szybkie naprawy w wynajmowanych mieszkaniach, z fakturą i krótkim raportem dla właściciela.
+          </p>
+          <p>
+            Cenę poznasz przed przyjazdem, a potwierdzimy ją na miejscu, zanim weźmiemy się do pracy. Bez gwiazdek i dopisków.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Zalewa mnie sąsiad z góry. Przyjedziecie od razu?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Dzwoń pod 123456789 — takie zgłoszenia bierzemy poza kolejką, o każdej porze. Pomożemy ustalić źródło i zabezpieczyć instalację do czasu naprawy u sąsiada.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Mieszkam w wieżowcu. Czy naprawa różni się od tej w kamienicy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Technicznie tak — nowe budynki mają inne rozdzielenie instalacji i armaturę. Znamy oba światy, więc niezależnie od wieku budynku przyjeżdżamy z właściwymi częściami.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy mogę prosić o fakturę na firmę?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, wystawiamy faktury dla firm, zarządców i właścicieli mieszkań na wynajem. Firma jest zarejestrowana i ubezpieczona.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Ile kosztuje naprawa spłuczki?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Kwotę podajemy w rozmowie, po opisaniu objawów. Naprawa najczęściej sprowadza się do wymiany zaworu napełniającego lub mechanizmu spustowego w jednej wizycie.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Robicie przeróbki instalacji przy remoncie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — przenosimy podejścia, prowadzimy nowe odcinki rur w bruzdach i przed zakryciem ścian wykonujemy próbę szczelności.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Częste pytania – hydraulik Wola</h2>
+        </div>
+        <details>
+          <summary>Zalewa mnie sąsiad z góry. Przyjedziecie od razu?</summary>
+          <p>Dzwoń pod 123456789 — takie zgłoszenia bierzemy poza kolejką, o każdej porze. Pomożemy ustalić źródło i zabezpieczyć instalację do czasu naprawy u sąsiada.</p>
+        </details>
+        <details>
+          <summary>Mieszkam w wieżowcu. Czy naprawa różni się od tej w kamienicy?</summary>
+          <p>Technicznie tak — nowe budynki mają inne rozdzielenie instalacji i armaturę. Znamy oba światy, więc niezależnie od wieku budynku przyjeżdżamy z właściwymi częściami.</p>
+        </details>
+        <details>
+          <summary>Czy mogę prosić o fakturę na firmę?</summary>
+          <p>Tak, wystawiamy faktury dla firm, zarządców i właścicieli mieszkań na wynajem. Firma jest zarejestrowana i ubezpieczona.</p>
+        </details>
+        <details>
+          <summary>Ile kosztuje naprawa spłuczki?</summary>
+          <p>Kwotę podajemy w rozmowie, po opisaniu objawów. Naprawa najczęściej sprowadza się do wymiany zaworu napełniającego lub mechanizmu spustowego w jednej wizycie.</p>
+        </details>
+        <details>
+          <summary>Robicie przeróbki instalacji przy remoncie?</summary>
+          <p>Tak — przenosimy podejścia, prowadzimy nowe odcinki rur w bruzdach i przed zakryciem ścian wykonujemy próbę szczelności.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w sąsiednich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-srodmiescie/">Hydraulik Śródmieście</a></li>
+          <li><a href="/hydraulik-warszawa-ochota/">Hydraulik Ochota</a></li>
+          <li><a href="/hydraulik-warszawa-bemowo/">Hydraulik Bemowo</a></li>
+          <li><a href="/hydraulik-warszawa-zoliborz/">Hydraulik Żoliborz</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Naprawa na Woli — zadzwoń</h2>
+          <p>
+            Opisz usterkę, a jeszcze w tej samej rozmowie poznasz cenę i termin. Odbieramy całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

@@ -1,0 +1,186 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Piaseczno – awarie wodne i montaż 24h"
+  description="Hydraulik w Piasecznie: usuwanie awarii wodnych, montaż baterii i bojlerów, naprawy spłuczek, podłączanie AGD w domach i mieszkaniach. Dojazd całodobowy, cena podawana przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Hydraulik na telefon</p>
+            <ul class="media-panel__points">
+              <li>Awarie wodne</li>
+              <li>Montaż i naprawy</li>
+              <li>Całe Piaseczno</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Awarie 24h
+            <span>•</span> Montaż i wymiany
+          </p>
+          <h1>Hydraulik Piaseczno</h1>
+          <p class="biz-card__addr">Piaseczno i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Dojazd wliczony w cenę usługi</li>
+            <li>Konkretna kwota przed rozpoczęciem pracy</li>
+            <li>Obsługa domów i mieszkań</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zakres usług</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne w Piasecznie</h2>
+          <p>Nowe osiedla, domy jednorodzinne i starsza zabudowa.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>naprawa spłuczki kompaktowej i podtynkowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>nowe instalacje wodno-kanalizacyjne</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Miasto domów i nowych osiedli</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Piaseczno obsługujemy na równi z resztą naszego terenu — bez traktowania jak „wyjazd za miasto". Zlecenia są tu zresztą podobne do tych z nowych osiedli w innych częściach aglomeracji: biały montaż w mieszkaniach od dewelopera, podłączanie sprzętów AGD, baterie. W domach dochodzą bojlery i dłuższe instalacje, a w starszej zabudowie — wymiany armatury, która przepracowała swoje.
+          </p>
+          <p>
+            Nie doliczamy nic za dojazd. Cena z telefonu obejmuje całość i jest potwierdzana na miejscu przed rozpoczęciem pracy.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Czy dojazd do Piaseczna kosztuje dodatkowo?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nie, dojazd jest wliczony w cenę usługi. Zadzwoń pod 123456789, opisz usterkę, a podamy jedną, pełną kwotę.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak szybko przyjedziecie do awarii w Piasecznie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Przy uciekającej wodzie ruszamy jak najszybciej, także w nocy i w dni wolne. Konkretny czas dojazdu podajemy przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Montujecie bojlery w domach?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — wymieniamy stare podgrzewacze i montujemy nowe, z podłączeniem do instalacji. Doradzimy pojemność dopasowaną do liczby domowników.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Odebrałem mieszkanie od dewelopera. Zrobicie montaż łazienki?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, wykonujemy kompletny biały montaż: toaleta, umywalka, wanna lub brodzik, baterie i podłączenie pralki. Całość wyceniamy w jednej rozmowie.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kiedy poznam ostateczną cenę?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Wstępną kwotę podajemy przez telefon, a ostateczną potwierdzamy na miejscu — zawsze przed rozpoczęciem pracy. Przy rozliczeniu nic się nie zmienia.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Najczęstsze pytania – hydraulik Piaseczno</h2>
+        </div>
+        <details>
+          <summary>Czy dojazd do Piaseczna kosztuje dodatkowo?</summary>
+          <p>Nie, dojazd jest wliczony w cenę usługi. Zadzwoń pod 123456789, opisz usterkę, a podamy jedną, pełną kwotę.</p>
+        </details>
+        <details>
+          <summary>Jak szybko przyjedziecie do awarii w Piasecznie?</summary>
+          <p>Przy uciekającej wodzie ruszamy jak najszybciej, także w nocy i w dni wolne. Konkretny czas dojazdu podajemy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Montujecie bojlery w domach?</summary>
+          <p>Tak — wymieniamy stare podgrzewacze i montujemy nowe, z podłączeniem do instalacji. Doradzimy pojemność dopasowaną do liczby domowników.</p>
+        </details>
+        <details>
+          <summary>Odebrałem mieszkanie od dewelopera. Zrobicie montaż łazienki?</summary>
+          <p>Tak, wykonujemy kompletny biały montaż: toaleta, umywalka, wanna lub brodzik, baterie i podłączenie pralki. Całość wyceniamy w jednej rozmowie.</p>
+        </details>
+        <details>
+          <summary>Kiedy poznam ostateczną cenę?</summary>
+          <p>Wstępną kwotę podajemy przez telefon, a ostateczną potwierdzamy na miejscu — zawsze przed rozpoczęciem pracy. Przy rozliczeniu nic się nie zmienia.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich lokalizacjach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-ursynow/">Hydraulik Ursynów</a></li>
+          <li><a href="/hydraulik-warszawa-wilanow/">Hydraulik Wilanów</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Fachowiec w Piasecznie na telefon</h2>
+          <p>
+            Opisz, co jest do zrobienia — usłyszysz kwotę i termin przyjazdu. Zgłoszenia przyjmujemy całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

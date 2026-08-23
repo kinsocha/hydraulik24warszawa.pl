@@ -1,0 +1,186 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Pruszków – naprawy hydrauliczne i pogotowie 24h"
+  description="Hydraulik w Pruszkowie: usuwanie awarii wodnych, wymiana baterii i zaworów, naprawy spłuczek, montaż bojlerów, podłączanie AGD. Dojazd bez dopłat o każdej porze, wycena przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Pogotowie hydrauliczne</p>
+            <ul class="media-panel__points">
+              <li>Awarie i naprawy</li>
+              <li>Montaż armatury</li>
+              <li>Cały Pruszków</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Naprawy i wymiany
+            <span>•</span> Pogotowie 24h
+          </p>
+          <h1>Hydraulik Pruszków</h1>
+          <p class="biz-card__addr">Pruszków i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Dojazd bez dopłat za odległość</li>
+            <li>Cena ustalona przed rozpoczęciem pracy</li>
+            <li>Terminy także tego samego dnia</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Co robimy</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne w Pruszkowie</h2>
+          <p>Mieszkania, domy jednorodzinne i lokale usługowe.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>naprawa spłuczki podtynkowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>wymiana wodomierzy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Ten sam standard co w każdej innej lokalizacji</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Pruszków to pełnoprawna część naszego terenu — z dojazdem wliczonym w cenę i tą samą zasadą rozliczeń, co wszędzie: kwota pada przed pracą, nie po niej. Pracujemy tu i w blokach z lat siedemdziesiątych, i w domach, i na nowych osiedlach, które wyrosły w ostatnich latach. Najczęstsze wezwania? Cieknąca spłuczka, wymiana baterii, wężyki po latach, podłączenie pralki. Czasem coś większego — bojler do wymiany albo instalacja przy generalnym remoncie.
+          </p>
+          <p>
+            Zadzwoń, powiedz co się dzieje, a resztę weźmiemy na siebie. Terminy planowe zwykle w ciągu paru dni, awarie — od ręki.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Czy dojazd do Pruszkowa jest płatny osobno?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nie — dojazd wliczamy w cenę usługi. Kwotę za całość poznasz w rozmowie: zadzwoń pod 123456789 i opisz, co jest do zrobienia.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak szybko możecie być w Pruszkowie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Przy awarii z uciekającą wodą ruszamy niezwłocznie, o każdej porze doby. Przy pracach planowych proponujemy termin zwykle w ciągu kilku dni.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Naprawiacie spłuczki podtynkowe bez kucia płytek?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — do mechanizmów dostajemy się przez otwór przycisku i tamtędy wymieniamy zawór napełniający lub mechanizm spustowy. Ściana zostaje nietknięta.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy mogę liczyć na fakturę?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, wystawiamy faktury. Firma jest zarejestrowana i posiada ubezpieczenie OC działalności — obsługujemy też firmy i wspólnoty.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Co wpływa na cenę naprawy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Kilka czynników: rodzaj usterki, stan instalacji i pora wizyty — nocą oraz w święta stawka może być wyższa. Konkretną kwotę zawsze podajemy przed rozpoczęciem pracy.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Częste pytania – hydraulik Pruszków</h2>
+        </div>
+        <details>
+          <summary>Czy dojazd do Pruszkowa jest płatny osobno?</summary>
+          <p>Nie — dojazd wliczamy w cenę usługi. Kwotę za całość poznasz w rozmowie: zadzwoń pod 123456789 i opisz, co jest do zrobienia.</p>
+        </details>
+        <details>
+          <summary>Jak szybko możecie być w Pruszkowie?</summary>
+          <p>Przy awarii z uciekającą wodą ruszamy niezwłocznie, o każdej porze doby. Przy pracach planowych proponujemy termin zwykle w ciągu kilku dni.</p>
+        </details>
+        <details>
+          <summary>Naprawiacie spłuczki podtynkowe bez kucia płytek?</summary>
+          <p>Tak — do mechanizmów dostajemy się przez otwór przycisku i tamtędy wymieniamy zawór napełniający lub mechanizm spustowy. Ściana zostaje nietknięta.</p>
+        </details>
+        <details>
+          <summary>Czy mogę liczyć na fakturę?</summary>
+          <p>Tak, wystawiamy faktury. Firma jest zarejestrowana i posiada ubezpieczenie OC działalności — obsługujemy też firmy i wspólnoty.</p>
+        </details>
+        <details>
+          <summary>Co wpływa na cenę naprawy?</summary>
+          <p>Kilka czynników: rodzaj usterki, stan instalacji i pora wizyty — nocą oraz w święta stawka może być wyższa. Konkretną kwotę zawsze podajemy przed rozpoczęciem pracy.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich lokalizacjach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-ursus/">Hydraulik Ursus</a></li>
+          <li><a href="/hydraulik-warszawa-wlochy/">Hydraulik Włochy</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Naprawa w Pruszkowie? Dzwoń</h2>
+          <p>
+            Jedna rozmowa: opisujesz usterkę, dostajesz kwotę i termin. Telefon czynny całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

@@ -1,0 +1,188 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Ursynów – usuwanie awarii wodnych i montaż"
+  description="Hydraulik na Ursynowie: naprawy spłuczek podtynkowych, wymiana baterii, usuwanie wycieków, podłączanie pralek i zmywarek, instalacje przy remontach. Dojazd całodobowy, wycena przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Hydraulik na telefon</p>
+            <ul class="media-panel__points">
+              <li>Awarie wodne</li>
+              <li>Naprawy i wymiany</li>
+              <li>Cały Ursynów</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Montaż i naprawy
+            <span>•</span> Pogotowie 24h
+          </p>
+          <h1>Hydraulik Ursynów</h1>
+          <p class="biz-card__addr">Ursynów i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Naprawy zamykane w jednej wizycie</li>
+            <li>Jasna wycena przed rozpoczęciem pracy</li>
+            <li>Fachowe doradztwo przed zakupem sprzętu</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Pełna lista usług</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Co naprawiamy i montujemy na Ursynowie</h2>
+          <p>Typowy zakres prac w mieszkaniach i domach.</p>
+        </div>
+        <ul class="services-list">
+          <li>naprawa spłuczki podtynkowej</li>
+          <li>wymiana zaworu napełniającego i mechanizmu spustowego</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>montaż toalety podwieszanej</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>montaż brodzika i kabiny prysznicowej</li>
+          <li>silikonowanie wanny, brodzika i umywalki</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>próby szczelności instalacji</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Blokowe łazienki i spłuczki podtynkowe</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Na Ursynowie bardzo dużo łazienek jest po remontach z ostatnich lat — a to oznacza stelaże podtynkowe. Gdy taka spłuczka zaczyna przepuszczać wodę do muszli, rachunki rosną po cichu tygodniami. Naprawiamy to bez kucia płytek: przez otwór przycisku wymieniamy zawór napełniający albo mechanizm spustowy i po sprawie. Druga częsta robota to kuchnie — podłączenie zmywarki, nowy syfon, bateria z wyciąganą wylewką.
+          </p>
+          <p>
+            Przed przyjazdem pytamy o szczegóły, żeby zabrać właściwe części. Dzięki temu większość napraw kończy się podczas jednej wizyty, a cenę znasz zanim zaczniemy.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Spłuczka cały czas przepuszcza wodę do muszli. Da się to naprawić bez kucia?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "W zdecydowanej większości przypadków tak — do mechanizmów dostajemy się przez otwór przycisku i tamtędy wymieniamy zużyte części. Płytki zostają nietknięte.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak szybko jesteście na Ursynowie?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Przy awarii z uciekającą wodą staramy się przyjechać jak najszybciej, o każdej porze. Zadzwoń pod 123456789 — dokładny czas dojazdu podamy przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kupiłem baterię w markecie. Zamontujecie ją?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, montujemy sprzęt kupiony przez klienta. Jeśli dopiero planujesz zakup, możesz najpierw zadzwonić — podpowiemy, co sprawdzi się w danym miejscu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Ile kosztuje podłączenie zmywarki?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Kwotę podajemy w rozmowie telefonicznej, po kilku pytaniach o kuchnię i przyłącza. Ustalona cena obowiązuje — nie zmienia się po skończonej pracy.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Robicie hydraulikę przy remoncie łazienki?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — nowe podejścia wody, przeniesienie punktów poboru, montaż stelaża podtynkowego, a przed zakryciem ścian próba szczelności instalacji.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Najczęstsze pytania – hydraulik Ursynów</h2>
+        </div>
+        <details>
+          <summary>Spłuczka cały czas przepuszcza wodę do muszli. Da się to naprawić bez kucia?</summary>
+          <p>W zdecydowanej większości przypadków tak — do mechanizmów dostajemy się przez otwór przycisku i tamtędy wymieniamy zużyte części. Płytki zostają nietknięte.</p>
+        </details>
+        <details>
+          <summary>Jak szybko jesteście na Ursynowie?</summary>
+          <p>Przy awarii z uciekającą wodą staramy się przyjechać jak najszybciej, o każdej porze. Zadzwoń pod 123456789 — dokładny czas dojazdu podamy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Kupiłem baterię w markecie. Zamontujecie ją?</summary>
+          <p>Tak, montujemy sprzęt kupiony przez klienta. Jeśli dopiero planujesz zakup, możesz najpierw zadzwonić — podpowiemy, co sprawdzi się w danym miejscu.</p>
+        </details>
+        <details>
+          <summary>Ile kosztuje podłączenie zmywarki?</summary>
+          <p>Kwotę podajemy w rozmowie telefonicznej, po kilku pytaniach o kuchnię i przyłącza. Ustalona cena obowiązuje — nie zmienia się po skończonej pracy.</p>
+        </details>
+        <details>
+          <summary>Robicie hydraulikę przy remoncie łazienki?</summary>
+          <p>Tak — nowe podejścia wody, przeniesienie punktów poboru, montaż stelaża podtynkowego, a przed zakryciem ścian próba szczelności instalacji.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w sąsiednich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-mokotow/">Hydraulik Mokotów</a></li>
+          <li><a href="/hydraulik-warszawa-wilanow/">Hydraulik Wilanów</a></li>
+          <li><a href="/hydraulik-warszawa-wlochy/">Hydraulik Włochy</a></li>
+          <li><a href="/hydraulik-piaseczno/">Hydraulik Piaseczno</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Umów naprawę na Ursynowie</h2>
+          <p>
+            Krótki opis usterki wystarczy, żebyśmy podali cenę i termin. Dzwoń o dowolnej porze: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

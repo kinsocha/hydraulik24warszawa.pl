@@ -1,0 +1,187 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Targówek – pogotowie wodne, naprawy i montaż"
+  description="Hydraulik na Targówku: usuwanie awarii wodnych, naprawa spłuczek i baterii, wymiana zaworów i wężyków, podłączanie pralek i zmywarek. Praca całodobowa, wycena przed rozpoczęciem roboty."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Pogotowie wodne</p>
+            <ul class="media-panel__points">
+              <li>Awarie i naprawy</li>
+              <li>Montaż armatury</li>
+              <li>Cały Targówek</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Awarie wodne
+            <span>•</span> Montaż i wymiany
+          </p>
+          <h1>Hydraulik Targówek</h1>
+          <p class="biz-card__addr">Targówek i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Terminy dotrzymywane co do godziny</li>
+            <li>Wycena przed rozpoczęciem pracy</li>
+            <li>Naprawa i sprzątnięcie po sobie</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zobacz usługi</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne na Targówku</h2>
+          <p>Bieżące naprawy i montaż w mieszkaniach oraz domach.</p>
+        </div>
+        <ul class="services-list">
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>wymiana zaworu napełniającego i mechanizmu spustowego</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż umywalki i zlewozmywaka</li>
+          <li>silikonowanie wanny, brodzika i umywalki</li>
+          <li>wymiana wodomierzy</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Bloki, szeregówki i lokale</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Na Targówku pracujemy i w blokowiskach, i w zabudowie szeregowej, i w lokalach przy głównych ulicach. Najwięcej wezwań dotyczy trzech rzeczy: spłuczki, która dolewa wodę do muszli, baterii do wymiany oraz wężyków — te potrafią puścić po latach bez ostrzeżenia. Każdą z tych napraw robimy na tyle często, że części mamy w aucie od ręki. Większe prace, jak przeróbki przy remoncie łazienki, umawiamy na konkretny dzień i przychodzimy z pełnym materiałem.
+          </p>
+          <p>
+            Szanujemy Twój czas: podajemy godzinę przyjazdu i się jej trzymamy. A cena? Znana zanim zaczniemy.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Spłuczka cały czas dolewa wodę. Ile kosztuje naprawa?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Kwotę podamy w rozmowie telefonicznej — zadzwoń pod 123456789 i opisz objawy. Najczęściej wymieniamy zawór napełniający lub mechanizm spustowy podczas jednej wizyty.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Kiedy najlepiej wymienić wężyki pod zlewem?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Profilaktycznie co kilka lat albo od razu, gdy widać rdzę, wybrzuszenie lub wilgoć na oplocie. Pęknięty wężyk potrafi zalać mieszkanie w kilka minut, więc z wymianą nie ma co czekać.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy przyjedziecie na konkretną godzinę?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, przy pracach planowanych umawiamy konkretną godzinę i się jej trzymamy. Przy awariach podajemy realny czas dojazdu już przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Co obejmuje wycena telefoniczna?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Robociznę, dojazd i — jeśli ustalimy, że przywozimy materiał — także części. Na miejscu potwierdzamy kwotę przed rozpoczęciem pracy i ona już nie rośnie.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Podłączacie pralki w zabudowie kuchennej?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, podłączamy pralki i zmywarki także w zabudowie — z doprowadzeniem wody, podpięciem odpływu i sprawdzeniem szczelności po montażu.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Najczęstsze pytania – hydraulik Targówek</h2>
+        </div>
+        <details>
+          <summary>Spłuczka cały czas dolewa wodę. Ile kosztuje naprawa?</summary>
+          <p>Kwotę podamy w rozmowie telefonicznej — zadzwoń pod 123456789 i opisz objawy. Najczęściej wymieniamy zawór napełniający lub mechanizm spustowy podczas jednej wizyty.</p>
+        </details>
+        <details>
+          <summary>Kiedy najlepiej wymienić wężyki pod zlewem?</summary>
+          <p>Profilaktycznie co kilka lat albo od razu, gdy widać rdzę, wybrzuszenie lub wilgoć na oplocie. Pęknięty wężyk potrafi zalać mieszkanie w kilka minut, więc z wymianą nie ma co czekać.</p>
+        </details>
+        <details>
+          <summary>Czy przyjedziecie na konkretną godzinę?</summary>
+          <p>Tak, przy pracach planowanych umawiamy konkretną godzinę i się jej trzymamy. Przy awariach podajemy realny czas dojazdu już przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Co obejmuje wycena telefoniczna?</summary>
+          <p>Robociznę, dojazd i — jeśli ustalimy, że przywozimy materiał — także części. Na miejscu potwierdzamy kwotę przed rozpoczęciem pracy i ona już nie rośnie.</p>
+        </details>
+        <details>
+          <summary>Podłączacie pralki w zabudowie kuchennej?</summary>
+          <p>Tak, podłączamy pralki i zmywarki także w zabudowie — z doprowadzeniem wody, podpięciem odpływu i sprawdzeniem szczelności po montażu.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w sąsiednich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-praga-polnoc/">Hydraulik Praga-Północ</a></li>
+          <li><a href="/hydraulik-warszawa-bialoleka/">Hydraulik Białołęka</a></li>
+          <li><a href="/hydraulik-warszawa-rembertow/">Hydraulik Rembertów</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Naprawa na Targówku? Jeden telefon</h2>
+          <p>
+            Powiedz, co się popsuło, a poznasz kwotę i godzinę przyjazdu. Dzwoń o dowolnej porze: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

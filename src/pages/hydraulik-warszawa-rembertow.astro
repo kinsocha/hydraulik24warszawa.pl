@@ -1,0 +1,187 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Rembertów – naprawy hydrauliczne i montaż"
+  description="Hydraulik w Rembertowie: naprawy w domach jednorodzinnych, montaż bojlerów, wymiana baterii i zaworów, usuwanie wycieków, instalacje przy remontach. Dojazd o każdej porze, cena przed rozpoczęciem pracy."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Hydraulik na telefon</p>
+            <ul class="media-panel__points">
+              <li>Domy jednorodzinne</li>
+              <li>Naprawy i montaż</li>
+              <li>Cały Rembertów</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Naprawy 24h
+            <span>•</span> Instalacje wodne
+          </p>
+          <h1>Hydraulik Rembertów</h1>
+          <p class="biz-card__addr">Rembertów i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Dojazd bez dopłat za odległość</li>
+            <li>Kwota podana zanim ruszy praca</li>
+            <li>Sprzęt i części zabierane na wizytę</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Zakres prac</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Prace hydrauliczne w Rembertowie</h2>
+          <p>Głównie domy jednorodzinne, ale też mieszkania i lokale.</p>
+        </div>
+        <ul class="services-list">
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>wymiana syfonu pod zlewem i umywalką</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>wymiana wodomierzy</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>nowe instalacje wodno-kanalizacyjne</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>prowadzenie rur zgrzewanych PP-R w bruzdach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Spokojna dzielnica, konkretna robota</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Rembertów to przede wszystkim domy — a w domach hydraulika żyje dłużej i psuje się inaczej niż w bloku. Bojler po dziesięciu latach zaczyna niedogrzewać, zawory przy grzejnikach twardnieją, gdzieś w kotłowni pojawia się wilgotna plama. Znamy te scenariusze i przyjeżdżamy przygotowani: z częściami do urządzeń, które spotyka się w zabudowie jednorodzinnej. Mniejsze naprawy — bateria, spłuczka, syfon — załatwiamy przy okazji tej samej wizyty, jeśli tylko dasz znać w telefonie.
+          </p>
+          <p>
+            Za dojazd do Rembertowa nie doliczamy nic ekstra. Cena za robotę pada przed jej rozpoczęciem.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Czy za dojazd do Rembertowa płacę dodatkowo?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nie, dojazd wliczamy w cenę usługi. Kwotę za całość podajemy w telefonie — zadzwoń pod 123456789 i opisz, co jest do zrobienia.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Bojler grzeje słabiej niż kiedyś. Warto go wymieniać?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nie zawsze — czasem wystarczy wymiana grzałki lub anody. Sprawdzamy urządzenie na miejscu i mówimy wprost, czy naprawa ma sens, czy lepiej zamontować nowe.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Można umówić kilka drobnych napraw na jedną wizytę?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, to najlepszy sposób. Wymień w rozmowie wszystkie usterki, a przywieziemy części do każdej z nich i zrobimy całość za jednym razem.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Przyjeżdżacie w święta?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, przy awariach pracujemy również w święta i weekendy. Stawka może być wtedy wyższa niż w dni robocze — dokładną kwotę podajemy przy zgłoszeniu.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Poprowadzicie instalację w nowo budowanym domu?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — wykonujemy kompletne instalacje wodno-kanalizacyjne: podejścia, rury PP-R w bruzdach i próbę szczelności przed zakryciem ścian.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Pytania i odpowiedzi – hydraulik Rembertów</h2>
+        </div>
+        <details>
+          <summary>Czy za dojazd do Rembertowa płacę dodatkowo?</summary>
+          <p>Nie, dojazd wliczamy w cenę usługi. Kwotę za całość podajemy w telefonie — zadzwoń pod 123456789 i opisz, co jest do zrobienia.</p>
+        </details>
+        <details>
+          <summary>Bojler grzeje słabiej niż kiedyś. Warto go wymieniać?</summary>
+          <p>Nie zawsze — czasem wystarczy wymiana grzałki lub anody. Sprawdzamy urządzenie na miejscu i mówimy wprost, czy naprawa ma sens, czy lepiej zamontować nowe.</p>
+        </details>
+        <details>
+          <summary>Można umówić kilka drobnych napraw na jedną wizytę?</summary>
+          <p>Tak, to najlepszy sposób. Wymień w rozmowie wszystkie usterki, a przywieziemy części do każdej z nich i zrobimy całość za jednym razem.</p>
+        </details>
+        <details>
+          <summary>Przyjeżdżacie w święta?</summary>
+          <p>Tak, przy awariach pracujemy również w święta i weekendy. Stawka może być wtedy wyższa niż w dni robocze — dokładną kwotę podajemy przy zgłoszeniu.</p>
+        </details>
+        <details>
+          <summary>Poprowadzicie instalację w nowo budowanym domu?</summary>
+          <p>Tak — wykonujemy kompletne instalacje wodno-kanalizacyjne: podejścia, rury PP-R w bruzdach i próbę szczelności przed zakryciem ścian.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w pobliskich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-wesola/">Hydraulik Wesoła</a></li>
+          <li><a href="/hydraulik-warszawa-wawer/">Hydraulik Wawer</a></li>
+          <li><a href="/hydraulik-warszawa-targowek/">Hydraulik Targówek</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Fachowiec w Rembertowie od ręki</h2>
+          <p>
+            Opisz usterkę albo planowaną pracę — podamy kwotę i termin przyjazdu. Telefon czynny całą dobę: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>

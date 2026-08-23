@@ -64,8 +64,9 @@ w całości 23.08.2026 na polecenie właściciela. NA PRODUKCJĘ IDZIE WERSJA AS
 - [ ] Duplikat w cenniku: ogólna „naprawa spłuczki" obok „kompaktowej" i „podtynkowej" — właściciel
       nie potwierdził usunięcia
 - [x] Który projekt idzie na produkcję — ASTRO (23.08.2026); wersja HTML skasowana
-- [ ] Podstrony dzielnicowe do odtworzenia (reguły wyżej) — właściciel nie wskazał jeszcze,
-      od których dzielnic zacząć
+- [x] Podstrony dzielnicowe ODTWORZONE (23.08.2026): wszystkie 19 (17 dzielnic + Piaseczno,
+      Pruszków) wg planu w `PLAN-podstrony-dzielnicowe.md`; wspólny CSS `src/styles/podstrona.css`;
+      przekierowania 301 w `public/.htaccess`; lista linków dzielnic na index w sekcji Obszar działania
 - [ ] Repo GitHub + konto FTP Seohost + deploy.yml (po zakupie domeny)
 - [ ] Schema CreativeWorkSeries + aggregateRating (gwiazdki) — do dodania przy dopracowaniu SEO
 

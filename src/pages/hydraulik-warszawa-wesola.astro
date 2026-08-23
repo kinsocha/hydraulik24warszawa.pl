@@ -1,0 +1,186 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Hydraulik Wesoła – usuwanie awarii i naprawy hydrauliczne"
+  description="Hydraulik w Wesołej: naprawy i montaż w domach jednorodzinnych, bojlery, zawory, baterie, wycieki, instalacje przy rozbudowach. Dojazd o każdej porze bez dopłat, cena podawana przed pracą."
+>
+  <main class="container">
+    <div class="page-card">
+      <section class="hero-grid">
+        <div class="biz-card__media">
+          <div class="media-panel">
+            <span class="media-panel__badge">24h</span>
+            <p class="media-panel__title">Awarie i naprawy</p>
+            <ul class="media-panel__points">
+              <li>Domy i segmenty</li>
+              <li>Montaż i wymiany</li>
+              <li>Cała Wesoła</li>
+            </ul>
+          </div>
+          <div class="biz-card__ribbon"><a href="tel:123456789"><span class="biz-card__ribbon-label">Zadzwoń</span>123456789</a></div>
+        </div>
+
+        <div class="biz-card__body">
+          <p class="biz-card__cats">
+            <strong>Usługi hydrauliczne</strong>
+            <span>•</span> Naprawy w domach
+            <span>•</span> Pogotowie 24h
+          </p>
+          <h1>Hydraulik Wesoła</h1>
+          <p class="biz-card__addr">Wesoła i okolice</p>
+
+          <h2 class="biz-card__sub">Co cenią nasi klienci</h2>
+          <ul class="biz-card__pros">
+            <li>Dojazd wliczony w cenę usługi</li>
+            <li>Kwota ustalana przed rozpoczęciem pracy</li>
+            <li>Części do domowych instalacji w aucie</li>
+          </ul>
+
+          <div class="biz-card__actions">
+            <a class="btn btn--primary" href="tel:123456789">Zadzwoń: 123456789</a>
+            <a class="btn btn--ghost" href="#uslugi">Co robimy</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="uslugi">
+        <div class="section-head">
+          <h2>Usługi hydrauliczne w Wesołej</h2>
+          <p>Zabudowa jednorodzinna, segmenty i mieszkania.</p>
+        </div>
+        <ul class="services-list">
+          <li>usuwanie wycieków i nieszczelności</li>
+          <li>pogotowie hydrauliczne przy awariach wodnych</li>
+          <li>montaż podgrzewaczy wody i bojlerów</li>
+          <li>wymiana zaworów kulowych i kątowych</li>
+          <li>wymiana zaworów grzejnikowych</li>
+          <li>wymiana pękniętych i starych wężyków</li>
+          <li>naprawa cieknących kranów i baterii</li>
+          <li>wymiana baterii kuchennej i umywalkowej</li>
+          <li>montaż baterii wannowych i prysznicowych</li>
+          <li>naprawa spłuczki kompaktowej</li>
+          <li>montaż i wymiana toalety kompaktowej</li>
+          <li>podłączenie pralki i zmywarki</li>
+          <li>montaż filtrów do wody i odwróconej osmozy</li>
+          <li>wymiana wodomierzy</li>
+          <li>nowe instalacje wodno-kanalizacyjne</li>
+          <li>przeróbki instalacji wodnej przy remontach</li>
+          <li>prowadzenie rur zgrzewanych PP-R w bruzdach</li>
+        </ul>
+      </section>
+
+      <section id="o-pracy">
+        <div class="section-head">
+          <h2>Hydraulika w domach — nasza specjalność</h2>
+        </div>
+        <div class="page-text">
+          <p>
+            Wesoła to dzielnica domów i segmentów, więc gros pracy mamy przy instalacjach większych niż blokowe. Bojler w kotłowni, hydraulika rozprowadzona po dwóch kondygnacjach, ogród z zewnętrznym punktem wody, który jesienią trzeba zabezpieczyć przed mrozem. Wiemy, co w takich instalacjach psuje się najczęściej i wozimy części, które pasują do domowego sprzętu. Przy rozbudowach i adaptacjach poddaszy prowadzimy nowe odcinki instalacji od podejść po próbę szczelności.
+          </p>
+          <p>
+            Dzwonisz, opisujesz, znasz cenę. Dojazd do Wesołej w niej siedzi — żadnych dopłat za kilometry.
+          </p>
+        </div>
+      </section>
+
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            {
+              "@type": "Question",
+              name: "Czy dojazd do Wesołej jest dodatkowo płatny?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Nie — dojazd wliczamy w cenę usługi, którą podajemy przy zgłoszeniu. Zadzwoń pod 123456789, opisz usterkę i poznasz pełną kwotę.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Jak zabezpieczyć zewnętrzny kran przed zimą?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Przed mrozami trzeba zakręcić zawór odcinający wewnątrz domu i spuścić wodę z odcinka prowadzącego na zewnątrz. Możemy to zrobić przy okazji dowolnej wizyty.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Wymieniacie bojlery elektryczne?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak — demontujemy stare urządzenie, montujemy nowe i podłączamy je do instalacji wodnej. Podpowiemy też, jaka pojemność ma sens przy Twoim zużyciu wody.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Czy pracujecie w nocy?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, przy awariach jesteśmy dostępni całą dobę. Nocą i w dni świąteczne stawka może być wyższa — dokładną kwotę podajemy zawsze przed przyjazdem.",
+              },
+            },
+            {
+              "@type": "Question",
+              name: "Adaptujemy poddasze. Doprowadzicie wodę do nowej łazienki?",
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: "Tak, prowadzimy nowe odcinki instalacji na wyższe kondygnacje — rury PP-R w bruzdach, podejścia pod armaturę i próba szczelności przed zabudową.",
+              },
+            },
+          ],
+        })}
+      />
+
+      <section id="faq">
+        <div class="section-head">
+          <h2>Pytania klientów – hydraulik Wesoła</h2>
+        </div>
+        <details>
+          <summary>Czy dojazd do Wesołej jest dodatkowo płatny?</summary>
+          <p>Nie — dojazd wliczamy w cenę usługi, którą podajemy przy zgłoszeniu. Zadzwoń pod 123456789, opisz usterkę i poznasz pełną kwotę.</p>
+        </details>
+        <details>
+          <summary>Jak zabezpieczyć zewnętrzny kran przed zimą?</summary>
+          <p>Przed mrozami trzeba zakręcić zawór odcinający wewnątrz domu i spuścić wodę z odcinka prowadzącego na zewnątrz. Możemy to zrobić przy okazji dowolnej wizyty.</p>
+        </details>
+        <details>
+          <summary>Wymieniacie bojlery elektryczne?</summary>
+          <p>Tak — demontujemy stare urządzenie, montujemy nowe i podłączamy je do instalacji wodnej. Podpowiemy też, jaka pojemność ma sens przy Twoim zużyciu wody.</p>
+        </details>
+        <details>
+          <summary>Czy pracujecie w nocy?</summary>
+          <p>Tak, przy awariach jesteśmy dostępni całą dobę. Nocą i w dni świąteczne stawka może być wyższa — dokładną kwotę podajemy zawsze przed przyjazdem.</p>
+        </details>
+        <details>
+          <summary>Adaptujemy poddasze. Doprowadzicie wodę do nowej łazienki?</summary>
+          <p>Tak, prowadzimy nowe odcinki instalacji na wyższe kondygnacje — rury PP-R w bruzdach, podejścia pod armaturę i próba szczelności przed zabudową.</p>
+        </details>
+      </section>
+
+      <section id="pobliskie">
+        <div class="section-head">
+          <h2>Hydraulik w sąsiednich dzielnicach</h2>
+        </div>
+        <ul class="nearby-list">
+          <li><a href="/hydraulik-warszawa-wawer/">Hydraulik Wawer</a></li>
+          <li><a href="/hydraulik-warszawa-rembertow/">Hydraulik Rembertów</a></li>
+        </ul>
+      </section>
+
+      <section id="kontakt">
+        <div class="cta-box">
+          <h2>Potrzebny fachowiec w Wesołej?</h2>
+          <p>
+            Opisz, co się dzieje z instalacją, a podamy cenę i termin przyjazdu. Odbieramy o każdej porze: <a href="tel:123456789">123456789</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+</Default>
