@@ -52,6 +52,40 @@ USUNIĘTY (23.08.2026) z obu projektów na polecenie właściciela.
 Projekt `C:\Users\lenovo\hydraulik24warszawa-html\` (czysty HTML, bliźniak wizualny) skasowany
 w całości 23.08.2026 na polecenie właściciela. NA PRODUKCJĘ IDZIE WERSJA ASTRO (ten projekt).
 
+## Inwentarz podstron i linków wewnętrznych + STOPNIOWE ODSŁANIANIE (stan 23.08.2026)
+
+**Strony w `src/pages/` (21):** `index`, `udraznianie-rur-warszawa` oraz 19 lokalnych:
+`hydraulik-warszawa-` + bemowo, bialoleka, bielany, mokotow, ochota, praga-polnoc, rembertow,
+srodmiescie, targowek, ursus, ursynow, wawer, wesola, wlochy, wola, zoliborz + `hydraulik-piaseczno`,
+`hydraulik-pruszkow`. Tabela slug ↔ stare URL-e 301 → `PLAN-podstrony-dzielnicowe.md`.
+
+**Linki wewnętrzne:**
+- Navbar (wszystkie strony): `/#uslugi`, `/udraznianie-rur-warszawa/`, `/#o-nas`, `/#obszar-dzialania`;
+  logo → `/`
+- Index → `/udraznianie-rur-warszawa/` (pozycja „udrażnianie rur" w cenniku)
+- Sekcje „pobliskie dzielnice" (2–4 linki, TYLKO między podstronami lokalnymi):
+  bemowo→wola,bielany,wlochy,ursus · praga→targowek,bialoleka,srodmiescie,zoliborz ·
+  srodmiescie→wola,ochota,mokotow,zoliborz · ursynow→mokotow,wilanow,wlochy,piaseczno ·
+  wawer→wesola,rembertow,wilanow · wilanow→mokotow,ursynow,piaseczno ·
+  bialoleka→targowek,praga,bielany · bielany→zoliborz,bemowo,bialoleka,wola ·
+  mokotow→srodmiescie,ochota,ursynow,wilanow · ochota→wola,srodmiescie,mokotow,wlochy ·
+  rembertow→wesola,wawer,targowek · targowek→praga,bialoleka,rembertow ·
+  ursus→wlochy,bemowo,pruszkow · wesola→wawer,rembertow · wlochy→ochota,ursus,bemowo ·
+  wola→srodmiescie,ochota,bemowo,zoliborz · zoliborz→bielany,wola,srodmiescie,praga ·
+  piaseczno→ursynow,wilanow · pruszkow→ursus,wlochy
+
+**STAN UKRYCIA (decyzja właściciela 23.08.2026):** 19 podstron lokalnych ISTNIEJE w kodzie
+i się buduje, ale ścieżki do nich są ODCIĘTE: (1) z index usunięta lista linków dzielnic
+(`dzielnice-links` w Obszarze działania), (2) sitemap ma filtr w `astro.config.mjs` wykluczający
+`/hydraulik-warszawa-*`, `/hydraulik-piaseczno`, `/hydraulik-pruszkow`, (3) z `public/.htaccess`
+usunięte 301 `home,NN` celujące w podstrony (zostały tylko 301 → `/`). Podstrony to wyspa
+połączona wyłącznie własnymi sekcjami „pobliskich".
+
+**Jak ODSŁANIAĆ dzielnicę (kolejno, gdy właściciel poleci):**
+1. dodać link na index (sekcja Obszar działania),
+2. usunąć jej slug z filtra sitemap w `astro.config.mjs`,
+3. przywrócić w `public/.htaccess` jej 301 (wzór w `PLAN-podstrony-dzielnicowe.md`).
+
 ## Nierozstrzygnięte / czeka na właściciela
 
 - [x] Zakup domeny hydraulik24warszawa.pl — KUPIONA (23.08.2026)
