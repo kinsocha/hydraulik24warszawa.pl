@@ -194,6 +194,39 @@
   gap: 10px 30px;
 }
 
+.obszar-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 30px;
+  align-items: start;
+}
+
+.obszar-grid iframe {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.obszar-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.obszar-left .cta-box {
+  padding: 28px 30px;
+}
+
+.obszar-left .cta-box h2 {
+  font-size: 24px;
+}
+
+@media (max-width: 900px) {
+  .obszar-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 #faq details {
   background: #fafaf8;
   border: 1px solid var(--border);
