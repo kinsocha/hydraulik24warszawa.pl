@@ -26,9 +26,12 @@ const { title, description } = Astro.props;
     <title>{title}</title>
     <slot name="head" />
   </head>
-  <body>
+  <body id="top">
     <Navbar />
     <slot />
+    <div class="do-gory">
+      <a href="#top" aria-label="Przewiń na górę strony"><span class="do-gory__strzalka">↑</span>Do góry</a>
+    </div>
     <footer class="site-footer">
       <div class="container">
         <p>Hydraulik 24 Warszawa &copy; {new Date().getFullYear()}</p>
@@ -130,6 +133,35 @@ const { title, description } = Astro.props;
 
   .section-head h2 {
     font-size: 30px;
+  }
+
+  .do-gory {
+    text-align: center;
+    margin: 6px 0 26px;
+  }
+
+  .do-gory a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 26px;
+    border-radius: 999px;
+    border: 1px solid #c9ccd1;
+    background: #fff;
+    color: var(--navy);
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color 0.15s ease;
+  }
+
+  .do-gory a:hover {
+    border-color: var(--navy);
+  }
+
+  .do-gory__strzalka {
+    color: var(--orange);
+    font-size: 18px;
+    line-height: 1;
   }
 
   .site-footer {
