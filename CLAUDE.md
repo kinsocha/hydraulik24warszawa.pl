@@ -68,12 +68,12 @@ w całości 23.08.2026 na polecenie właściciela. NA PRODUKCJĘ IDZIE WERSJA AS
       Pruszków) wg planu w `PLAN-podstrony-dzielnicowe.md`; wspólny CSS `src/styles/podstrona.css`;
       przekierowania 301 w `public/.htaccess`; lista linków dzielnic na index w sekcji Obszar działania
 - [ ] Repo GitHub + konto FTP Seohost + deploy.yml (po zakupie domeny)
-- [x] Schema CreativeWorkSeries + aggregateRating (gwiazdki) — DODANE na index 23.08.2026
-      (ratingValue 5.0, ratingCount 3 = zgodnie z 3 widocznymi recenzjami; podbijać ratingCount
-      przy dodawaniu kolejnych recenzji). Na podstronach dzielnicowych CELOWO brak aggregateRating —
-      nie mają widocznych opinii, a schema ocen bez opinii na stronie łamie wytyczne Google
-      (ryzyko utraty gwiazdek dla całej domeny). Jeśli mają dostać gwiazdki → najpierw dodać
-      sekcje opinii na te podstrony
+- [x] Schema na index: **Plumber** (decyzja właściciela 23.08.2026) — name, url, telephone
+      (+48123456789 TYMCZASOWY, podmienić razem z resztą), description, areaServed Warszawa,
+      openingHours 24/7. CreativeWorkSeries + aggregateRating było dodane i USUNIĘTE na polecenie
+      właściciela tego samego dnia — nie przywracać bez jego decyzji. BEZ adresu pocztowego w schema
+      (marka nie ma ustalonego adresu; nie wstawiać adresu innych marek). Na podstronach
+      dzielnicowych na razie bez schema firmowego
 
 ## Notatki techniczne (Astro 7 — nowości vs Astro 5)
 

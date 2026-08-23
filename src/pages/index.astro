@@ -130,13 +130,29 @@ import Default from "../layouts/Default.astro";
         is:inline
         set:html={JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "CreativeWorkSeries",
-          name: "Hydraulik 24 Warszawa – usługi hydrauliczne",
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "5.0",
-            bestRating: "5",
-            ratingCount: "3",
+          "@type": "Plumber",
+          name: "Hydraulik 24 Warszawa",
+          url: "https://hydraulik24warszawa.pl/",
+          telephone: "+48123456789",
+          description:
+            "Usługi hydrauliczne w Warszawie i okolicach: usuwanie awarii wodnych, montaż baterii, naprawy spłuczek, podłączanie AGD i instalacje wodne przy remontach. Cena podawana przed rozpoczęciem pracy.",
+          areaServed: {
+            "@type": "City",
+            name: "Warszawa",
+          },
+          openingHoursSpecification: {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday",
+            ],
+            opens: "00:00",
+            closes: "23:59",
           },
         })}
       />
