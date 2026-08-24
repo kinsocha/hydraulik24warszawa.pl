@@ -12,6 +12,12 @@
 
 ## Deploy (RÓŻNICA vs inne marki)
 
+- **DEPLOY ZAMROŻONY (24.08.2026, polecenie właściciela)**: workflow `deploy.yml` WYŁĄCZONY na GitHubie
+  (Actions → workflow „Deploy hydraulik24warszawa.pl" → stan disabled_manually), bo na stronie jest
+  tymczasowy numer 123456789. NIE włączać i NIE deployować, dopóki właściciel nie poda docelowego
+  numeru telefonu i nie zostanie on podmieniony. Włączenie: przycisk „Enable workflow" w zakładce
+  Actions albo API. Pierwszy deploy 24.08.2026 PRZESZEDŁ — strona z numerem 123456789 JEST na serwerze.
+
 - Konto FTP na Seohost dla tej domeny ma ścieżkę **`/domains/hydraulik24warszawa.pl/public_html/`**
   (właściciel utworzył je tak 24.08.2026 — z `public_html` W ŚRODKU ścieżki konta, inaczej niż
   w przepisie z globalnego CLAUDE.md, gdzie konto wskazuje `/domains/[domena].pl/`).
