@@ -10,6 +10,16 @@
 - **Telefon**: JESZCZE NIE PODANY. Na stronie stoi TYMCZASOWY numer **123456789** (wstawiony na życzenie właściciela do testów wyglądu) — PODMIENIĆ na docelowy przed publikacją. Zakaz użycia numerów innych marek: 510 733 300, 511 323 123, 660 360 170, 888 806 921
 - **Design**: karta firmowa na wzór zrzutu z niemieckiego portalu (granat #1b3252 + pomarańcz #f7941e, tło #f4f4f2, PT Sans); zaokrąglony navbar z odstępem od boków (NIE sticky), CAŁA treść w jednej białej karcie (page-card)
 
+## Deploy (RÓŻNICA vs inne marki)
+
+- Konto FTP na Seohost dla tej domeny ma ścieżkę **`/domains/hydraulik24warszawa.pl/public_html/`**
+  (właściciel utworzył je tak 24.08.2026 — z `public_html` W ŚRODKU ścieżki konta, inaczej niż
+  w przepisie z globalnego CLAUDE.md, gdzie konto wskazuje `/domains/[domena].pl/`).
+- Dlatego w `deploy.yml` jest **`server-dir: ./`** — NIE zmieniać na `./public_html/`, bo pliki
+  wylądują w `public_html/public_html/`.
+- Sekrety w repo GitHub: `REMOTE_HOST=h50.seohost.pl`, `REMOTE_USER=github...@hydraulik24warszawa.pl`,
+  `REMOTE_PASSWORD`.
+
 ## Rozdzielność tematyczna (per podstrona)
 
 - **Index (hydraulika)**: w treści NIE używać słów z tematyki udrażniania (udrażnianie, udrożnienie,

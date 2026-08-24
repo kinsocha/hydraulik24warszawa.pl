@@ -43,7 +43,9 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           password: ${{ secrets.REMOTE_PASSWORD }}
           local-dir: ./dist/
-          server-dir: ./public_html/
+          # Konto FTP ma ścieżkę /domains/hydraulik24warszawa.pl/public_html/ (inaczej niż w innych markach),
+          # więc wysyłamy do katalogu głównego konta — bez dopisywania public_html
+          server-dir: ./
           timeout: 60000
           exclude: |
             **/.git*
