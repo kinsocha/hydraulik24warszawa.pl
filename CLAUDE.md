@@ -17,7 +17,9 @@
   w przepisie z globalnego CLAUDE.md, gdzie konto wskazuje `/domains/[domena].pl/`).
 - Dlatego w `deploy.yml` jest **`server-dir: ./`** — NIE zmieniać na `./public_html/`, bo pliki
   wylądują w `public_html/public_html/`.
-- Sekrety w repo GitHub: `REMOTE_HOST=h50.seohost.pl`, `REMOTE_USER=github...@hydraulik24warszawa.pl`,
+- Sekrety w repo GitHub: `REMOTE_HOST=h50.seohost.pl`,
+  **`REMOTE_USER=githubhydraulik24warszawa@srv78381.seohost.com.pl`** (Seohost dokleił tu domenę
+  SERWERA `srv78381.seohost.com.pl`, NIE domenę strony — potwierdzone zrzutem z panelu 24.08.2026),
   `REMOTE_PASSWORD`.
 
 ## Rozdzielność tematyczna (per podstrona)
