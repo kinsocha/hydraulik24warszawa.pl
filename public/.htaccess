@@ -1,13 +1,41 @@
-Redirect 301 /home,1,strona_glowna.html /
-Redirect 301 /home,3,kontakt.html /
-Redirect 301 /home,4,oferta.html /
-Redirect 301 /home,25,miasta.html /
-Redirect 301 /home,28,hydraulik_warszawa.html /
-Redirect 301 /hydraulik-warszawa.html /
-Redirect 301 /pogotowie-hydrauliczne.html /
-Redirect 301 /pogotowie-hydrauliczne-warszawa/ /
-Redirect 301 /instalacje-hydrauliczne.html /
-Redirect 301 /instalacje-hydrauliczne-warszawa/ /
-Redirect 301 /naprawy-hydrauliczne-warszawa/ /
-Redirect 301 /montaz-i-naprawy.html /
-Redirect 301 /feed/ /
+# Czyste adresy bez kreski na koncu (hydraulik24warszawa.pl, od 12.09.2026)
+# Astro buduje strony jako /sciezka/index.html. Domyslnie Apache dokleja
+# kreske (/sciezka -> /sciezka/). Ponizsze reguly wymuszaja wersje BEZ kreski.
+
+Options -MultiViews -Indexes
+DirectorySlash Off
+RewriteEngine On
+
+# 0a) www -> bez www, http -> https (jednym skokiem)
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# 0b) Stale adresy ze starej domeny (2014-2022) -> strona glowna
+RewriteRule ^home,1,strona_glowna\.html$ / [R=301,L]
+RewriteRule ^home,3,kontakt\.html$ / [R=301,L]
+RewriteRule ^home,4,oferta\.html$ / [R=301,L]
+RewriteRule ^home,25,miasta\.html$ / [R=301,L]
+RewriteRule ^home,28,hydraulik_warszawa\.html$ / [R=301,L]
+RewriteRule ^hydraulik-warszawa\.html$ / [R=301,L]
+RewriteRule ^pogotowie-hydrauliczne\.html$ / [R=301,L]
+RewriteRule ^pogotowie-hydrauliczne-warszawa/?$ / [R=301,L]
+RewriteRule ^instalacje-hydrauliczne\.html$ / [R=301,L]
+RewriteRule ^instalacje-hydrauliczne-warszawa/?$ / [R=301,L]
+RewriteRule ^naprawy-hydrauliczne-warszawa/?$ / [R=301,L]
+RewriteRule ^montaz-i-naprawy\.html$ / [R=301,L]
+RewriteRule ^feed/?$ / [R=301,L]
+
+# 0c) Stare adresy podstron dzielnicowych (home,NN,hydraulik_warszawa_X.html)
+# dopisywane przy odslanianiu kolejnych dzielnic - wzor w PLAN-odslanianie-dzielnic.md
+
+# 1) Przekieruj adres z kreska na koncu na wersje bez kreski (poza rootem)
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 2) Serwuj /sciezka/index.html dla adresu /sciezka (bez przekierowania)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
+RewriteRule ^(.*?)/?$ $1/index.html [L]
+
+ErrorDocument 404 /404.html

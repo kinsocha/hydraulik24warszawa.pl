@@ -1,0 +1,21 @@
+---
+import Default from "../layouts/Default.astro";
+import "../styles/podstrona.css";
+---
+
+<Default
+  title="Nie znaleziono strony – Hydraulik Warszawa"
+  description="Strona o tym adresie nie istnieje. Przejdź na stronę główną albo zadzwoń do hydraulika: 880 308 067."
+>
+  <meta name="robots" content="noindex" slot="head" />
+  <main class="container">
+    <div class="page-card">
+      <section>
+        <div class="section-head">
+          <h1>Nie znaleziono strony</h1>
+        </div>
+        <p>Adres, który wpisałeś, nie istnieje albo został zmieniony. Wróć na <a href="/">stronę główną</a> albo zadzwoń: <a href="tel:880308067">880 308 067</a>.</p>
+      </section>
+    </div>
+  </main>
+</Default>
