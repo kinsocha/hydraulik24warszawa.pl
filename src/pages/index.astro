@@ -275,6 +275,9 @@ import Default from "../layouts/Default.astro";
             <p class="onas-text">
               Pracujemy na terenie całej Warszawy i w najbliższych okolicach miasta. Do awarii wodnych dojeżdżamy o każdej porze, także w nocy i w dni wolne. Przy pracach planowanych, takich jak montaż baterii czy przeróbki instalacji przy remoncie, termin wizyty ustalamy przy zgłoszeniu.
             </p>
+            <ul class="dzielnice-links">
+              <li><a href="/hydraulik-warszawa-srodmiescie">Hydraulik Śródmieście</a></li>
+            </ul>
             <div class="cta-box" id="wycena">
               <h2>Wycena przed rozpoczęciem pracy</h2>
               <p>
@@ -513,6 +516,31 @@ import Default from "../layouts/Default.astro";
 
   .obszar-left .cta-box h2 {
     font-size: 24px;
+  }
+
+  .dzielnice-links {
+    list-style: none;
+    columns: 3;
+    column-gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dzielnice-links li {
+    padding: 4px 0;
+    break-inside: avoid;
+  }
+
+  @media (max-width: 900px) {
+    .dzielnice-links {
+      columns: 2;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .dzielnice-links {
+      columns: 1;
+    }
   }
 
 

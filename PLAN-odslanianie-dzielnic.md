@@ -37,7 +37,7 @@ zindeksowana (GSC → Sprawdzanie adresu URL). Właściciel steruje komendą „
 
 | # | Dzielnica | Slug | Linia do dopisania w `public/.htaccess` (sekcja 0c) | Sąsiedzi z listy (linkować dopiero gdy widoczni) | Status |
 |---|---|---|---|---|---|
-| 1 | Śródmieście | `/hydraulik-warszawa-srodmiescie` | `RewriteRule ^home,36,hydraulik_warszawa_srodmiescie\.html$ /hydraulik-warszawa-srodmiescie [R=301,L]` | wola, ochota, mokotow, zoliborz | ukryta |
+| 1 | Śródmieście | `/hydraulik-warszawa-srodmiescie` | `RewriteRule ^home,36,hydraulik_warszawa_srodmiescie\.html$ /hydraulik-warszawa-srodmiescie [R=301,L]` | wola, ochota, mokotow, zoliborz | widoczna 12.09.2026 (sekcja „pobliskie" usunięta — brak widocznych sąsiadów; przywrócić przy odsłonięciu Mokotowa/Woli/Ochoty/Żoliborza) |
 | 2 | Mokotów | `/hydraulik-warszawa-mokotow` | `RewriteRule ^home,32,hydraulik_warszawa_mokotow\.html$ /hydraulik-warszawa-mokotow [R=301,L]` | srodmiescie, ochota, ursynow, wilanow | ukryta |
 | 3 | Wola | `/hydraulik-warszawa-wola` | `RewriteRule ^home,44,hydraulik_warszawa_wola\.html$ /hydraulik-warszawa-wola [R=301,L]` | srodmiescie, ochota, bemowo, zoliborz | ukryta |
 | 4 | Ursynów | `/hydraulik-warszawa-ursynow` | `RewriteRule ^home,39,hydraulik_warszawa_ursynow\.html$ /hydraulik-warszawa-ursynow [R=301,L]` | mokotow, wilanow, wlochy, piaseczno | ukryta |
@@ -67,16 +67,11 @@ regułę `/x/`→301→`/x`, bez osobnej linii.
 ## 3. Procedura „dodaj kolejną podstronę" (checklist, wykonać w całości)
 
 1. **Wybór**: pierwsza pozycja tabeli ze statusem `ukryta`. Nazwać ją w odpowiedzi.
-2. **Link na index** (`src/pages/index.astro`, sekcja `#obszar-dzialania`, w `.obszar-left`
-   pod akapitem `.onas-text`, przed `.cta-box`): przy PIERWSZEJ dzielnicy przywrócić
-   `<ul class="dzielnice-links">` i CSS `.dzielnice-links` (columns: 3 / 2 / 1 — wzorzec
-   w commicie ukrycia z 23.08.2026: `git show <hash> -- src/pages/index.astro`, linki BEZ
-   ukośnika); przy każdej kolejnej dopisać `<li><a href="/slug">Hydraulik Dzielnica</a></li>`
-   na końcu listy.
-3. **Sitemap** (`astro.config.mjs`): obecny filtr wyklucza WZORCEM (`/hydraulik-warszawa-`),
-   więc przy pierwszej dzielnicy przepisać go na jawną tablicę ukrytych slugów
-   (`const HIDDEN = ['/hydraulik-warszawa-mokotow', ...]; filter: (page) => !HIDDEN.some(s => page.endsWith(s))`),
-   a potem przy każdej dzielnicy USUWAĆ jej slug z tablicy.
+2. **Link na index** (`src/pages/index.astro`, sekcja `#obszar-dzialania`, lista
+   `<ul class="dzielnice-links">` pod akapitem `.onas-text` — istnieje od 12.09.2026 wraz z CSS):
+   dopisać `<li><a href="/slug">Hydraulik Dzielnica</a></li>` na końcu listy.
+3. **Sitemap** (`astro.config.mjs`): filtr to jawna tablica `HIDDEN` ukrytych slugów
+   (od 12.09.2026) — USUNĄĆ z niej slug odsłanianej dzielnicy.
 4. **Przekierowanie 301** (`public/.htaccess`, sekcja `0c`): DOPISAĆ linię z tabeli. Dziś stare
    adresy dzielnic dają 404 — nic nie usuwamy, tylko dopisujemy. Linia musi stać PRZED regułą
    ogólną `^(.+)/$`.

@@ -29,6 +29,7 @@ RewriteRule ^feed/?$ / [R=301,L]
 
 # 0c) Stare adresy podstron dzielnicowych (home,NN,hydraulik_warszawa_X.html)
 # dopisywane przy odslanianiu kolejnych dzielnic - wzor w PLAN-odslanianie-dzielnic.md
+RewriteRule ^home,36,hydraulik_warszawa_srodmiescie\.html$ /hydraulik-warszawa-srodmiescie [R=301,L]
 
 # 1) Przekieruj adres z kreska na koncu na wersje bez kreski (poza rootem)
 RewriteRule ^(.+)/$ /$1 [R=301,L]

@@ -92,7 +92,7 @@ srodmiescie, targowek, ursus, ursynow, wawer, wesola, wlochy, wola, zoliborz + `
   wola→srodmiescie,ochota,bemowo,zoliborz · zoliborz→bielany,wola,srodmiescie,praga ·
   piaseczno→ursynow,wilanow · pruszkow→ursus,wlochy
 
-**STAN UKRYCIA (decyzja właściciela 23.08.2026):** 19 podstron lokalnych ISTNIEJE w kodzie
+**STAN UKRYCIA (decyzja właściciela 23.08.2026, od 12.09.2026 stopniowo zdejmowany — patrz plan):** 19 podstron lokalnych ISTNIEJE w kodzie
 i się buduje, ale ścieżki do nich są ODCIĘTE: (1) z index usunięta lista linków dzielnic
 (`dzielnice-links` w Obszarze działania), (2) sitemap ma filtr w `astro.config.mjs` wykluczający
 `/hydraulik-warszawa-*`, `/hydraulik-piaseczno`, `/hydraulik-pruszkow`, (3) z `public/.htaccess`
@@ -101,7 +101,7 @@ połączona wyłącznie własnymi sekcjami „pobliskich".
 
 **Jak ODSŁANIAĆ dzielnicę — PEŁNY PLAN: `PLAN-odslanianie-dzielnic.md`** (12.09.2026):
 kolejność 19 dzielnic z tabelą (slug, linia 301, sąsiedzi, status), checklist 9 kroków
-i 7 decyzji właściciela z 12.09.2026 (zamknięte: wariant A „pobliskich", kolejność, tempo 5–7 dni, bez Plumber). Na komendę „dodaj kolejną podstronę" brać pierwszą
+Stan: 1 z 19 widoczna (Śródmieście, 12.09.2026), 18 ukrytych. 7 decyzji właściciela z 12.09.2026 (zamknięte: wariant A „pobliskich", kolejność, tempo 5–7 dni, bez Plumber). Na komendę „dodaj kolejną podstronę" brać pierwszą
 ze statusem `ukryta` w tej tabeli. Skrót kroków: link na index →
 slug z filtra sitemap → DOPISAĆ 301 w `.htaccess` (dziś stare adresy dzielnic dają 404) →
 „pobliskie" tylko do widocznych → build + grep → commit/push → curl po deployu → status w tabeli.
